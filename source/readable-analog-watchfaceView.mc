@@ -97,7 +97,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
             var angel = (Math.PI * 2 /12 * i) - (Math.PI/2);
             var _x = screenCenterPoint[0] + (distance * Math.cos(angel));
             var _y =screenCenterPoint[1] + (distance * Math.sin(angel));
-            targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             targetDc.drawText(_x , _y , font, i.toString(), Graphics.TEXT_JUSTIFY_VCENTER | Graphics.TEXT_JUSTIFY_CENTER);
         }
 

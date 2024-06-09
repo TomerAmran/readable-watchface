@@ -490,7 +490,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.329 = getm $.Toybox.Graphics;
         %tmp.330 = getv %tmp.329 :COLOR_WHITE;
         %tmp.331 = getm $.Toybox.Graphics;
-        %tmp.332 = getv %tmp.331 :COLOR_BLACK;
+        %tmp.332 = getv %tmp.331 :COLOR_TRANSPARENT;
         invoke %tmp.327 %tmp.328(%tmp.330, %tmp.332);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 101 12 ]
         %tmp.333 = lgetv %targetDc.9;
