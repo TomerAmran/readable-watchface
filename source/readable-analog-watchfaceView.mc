@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+using Toybox.Time.Gregorian;
 
 class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var screenCenterPoint;
@@ -15,7 +16,11 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
-                font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
+        font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
+
+        var bbr = Graphics.createBufferedBitmap({:width=>100, :height=>100});
+        var bb = bbr.get();
+        var bbDc = bb.getDc(); // doesn't work !    
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -37,6 +42,8 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     // }
 
       function onUpdate(dc) {
+        System.println("onUpdate");
+
         var width;
         var height;
         var radius;
@@ -51,10 +58,15 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         height = targetDc.getHeight();
         radius = width / 2;
 
-
         // Fill the entire background with Black.
         targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
+
+        drawDateString( targetDc, screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5 );
+        // Draw the battery percentage directly to the main screen.
+        var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, 3*height/4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw the arbor in the center of the screen.
         targetDc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
@@ -115,9 +127,6 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
         targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 90, 0, 8));
-
-        // Draw the battery percentage directly to the main screen.
-        var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
     }
 
    function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {
@@ -142,6 +151,15 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         }
 
         return result;
+    }
+
+    // Draw the date string into the provided buffer at the specified location
+    function drawDateString( dc, x, y ) {
+        var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        var dateStr = Lang.format("$1$ $2$", [info.month, info.day]);
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(x, y, Graphics.FONT_SMALL, dateStr, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
 
