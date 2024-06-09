@@ -7,6 +7,7 @@ using Toybox.Time.Gregorian;
 class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var screenCenterPoint;
         var font;
+        var prevMinute = 0;
 
     function initialize() {
         WatchFace.initialize();
@@ -41,9 +42,8 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     //     View.onUpdate(dc);
     // }
 
-      function onUpdate(dc) {
-        System.println("onUpdate");
-
+function drawWatchface(dc){
+        System.println("drawWatchface");
         var width;
         var height;
         var radius;
@@ -66,7 +66,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         // Draw the battery percentage directly to the main screen.
         var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(width / 2, 3*height/4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] + radius* 0.5, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw the arbor in the center of the screen.
         targetDc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
@@ -127,6 +127,14 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
         targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 90, 0, 8));
+}
+
+      function onUpdate(dc) {
+        System.println("onUpdate");
+        if (prevMinute != System.getClockTime().min) {
+            prevMinute = System.getClockTime().min;
+            drawWatchface(dc);
+        }
     }
 
    function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {

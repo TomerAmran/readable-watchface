@@ -20,7 +20,6 @@ class readable_analog_watchfaceApp extends Application.AppBase {
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [ new readable_analog_watchfaceView() ];
     }
-
 }
 
 function getApp() as readable_analog_watchfaceApp {
