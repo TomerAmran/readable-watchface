@@ -221,7 +221,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.73 = lgetv %radius.3;
         %tmp.74 = 0.5;
         %tmp.75 = mul %tmp.73 %tmp.74;
-        %tmp.76 = add %tmp.71 %tmp.75;
+        %tmp.76 = sub %tmp.71 %tmp.75;
         %tmp.78 = getv ? :screenCenterPoint;
         %tmp.79 = 1;
         %tmp.80 = agetv %tmp.78 %tmp.79;
