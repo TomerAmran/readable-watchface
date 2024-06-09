@@ -66,11 +66,11 @@ function drawWatchface(dc){
         dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T+N", Graphics.TEXT_JUSTIFY_CENTER);
 
 
-        drawDateString( targetDc, screenCenterPoint[0] - radius* 0.5, screenCenterPoint[1]);
+        drawDateString( targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
         // Draw the battery percentage directly to the main screen.
         var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] + radius* 0.5, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] + radius* 0.4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw the arbor in the center of the screen.
         targetDc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
@@ -173,7 +173,7 @@ function drawWatchface(dc){
         var dateStr = Lang.format("$1$ $2$", [info.month, info.day]);
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(x, y, Graphics.FONT_SMALL, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(x, y, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
 

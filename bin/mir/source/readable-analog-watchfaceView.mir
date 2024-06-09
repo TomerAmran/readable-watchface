@@ -219,7 +219,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.70 = 0;
         %tmp.71 = agetv %tmp.69 %tmp.70;
         %tmp.73 = lgetv %radius.3;
-        %tmp.74 = 0.5;
+        %tmp.74 = 0.45;
         %tmp.75 = mul %tmp.73 %tmp.74;
         %tmp.76 = sub %tmp.71 %tmp.75;
         %tmp.78 = getv ? :screenCenterPoint;
@@ -260,7 +260,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.107 = 1;
         %tmp.108 = agetv %tmp.106 %tmp.107;
         %tmp.110 = lgetv %radius.3;
-        %tmp.111 = 0.5;
+        %tmp.111 = 0.4;
         %tmp.112 = mul %tmp.110 %tmp.111;
         %tmp.113 = add %tmp.108 %tmp.112;
         %tmp.114 = getm $.Toybox.Graphics;
@@ -985,7 +985,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.33 = lgetv %x;
         %tmp.35 = lgetv %y;
         %tmp.36 = getm $.Toybox.Graphics;
-        %tmp.37 = getv %tmp.36 :FONT_SMALL;
+        %tmp.37 = getv %tmp.36 :FONT_TINY;
         %tmp.39 = lgetv %dateStr.2;
         %tmp.40 = getm $.Toybox.Graphics;
         %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
