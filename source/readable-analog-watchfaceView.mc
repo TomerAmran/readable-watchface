@@ -62,7 +62,11 @@ function drawWatchface(dc){
         targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
 
-        drawDateString( targetDc, screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5 );
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T♥N", Graphics.TEXT_JUSTIFY_CENTER);
+
+
+        drawDateString( targetDc, screenCenterPoint[0] + radius* 0.5, screenCenterPoint[1]  );
         // Draw the battery percentage directly to the main screen.
         var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -122,11 +126,13 @@ function drawWatchface(dc){
         hourHandAngle = hourHandAngle * Math.PI * 2;
 
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, hourHandAngle, 45, 0, 10));
+        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, hourHandAngle, 40, 15, 16));
 
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 90, 0, 8));
+        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 90, 15, 12));
+        // targetDc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
+        // targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 80, 0, 8));
 }
 
       function onUpdate(dc) {
@@ -167,7 +173,7 @@ function drawWatchface(dc){
         var dateStr = Lang.format("$1$ $2$", [info.month, info.day]);
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(x, y, Graphics.FONT_SMALL, dateStr, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(x, y, Graphics.FONT_SMALL, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
 

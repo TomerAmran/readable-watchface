@@ -41,16 +41,16 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_2
 _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_20_68_22_4_stop:
     }
 }
-[ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc"; @line = 26; ]
+[ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc"; @line = 25; ]
 function getApp() as readable_analog_watchfaceApp {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_26_50_28_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" 27 4 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_25_50_27_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" 26 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 readable_analog_watchfaceApp;
     ret %tmp.4;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_26_50_28_0_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceApp_mc_25_50_27_0_stop:
 }
 [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc"; @line = 1; ]
 <init> {
