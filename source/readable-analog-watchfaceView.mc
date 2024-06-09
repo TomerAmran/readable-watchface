@@ -63,7 +63,7 @@ function drawWatchface(dc){
         targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T♥N", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T+N", Graphics.TEXT_JUSTIFY_CENTER);
 
 
         drawDateString( targetDc, screenCenterPoint[0] + radius* 0.5, screenCenterPoint[1]  );

@@ -207,7 +207,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.58 = sub %tmp.53 %tmp.57;
         %tmp.59 = getm $.Toybox.Graphics;
         %tmp.60 = getv %tmp.59 :FONT_TINY;
-        %tmp.61 = "T♥N";
+        %tmp.61 = "T+N";
         %tmp.62 = getm $.Toybox.Graphics;
         %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.44 %tmp.45(%tmp.49, %tmp.58, %tmp.60, %tmp.61, %tmp.63);
