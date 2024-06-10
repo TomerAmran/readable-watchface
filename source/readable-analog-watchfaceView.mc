@@ -111,6 +111,7 @@ function drawWatchface(dc){
             var _y =screenCenterPoint[1] + (distance * Math.sin(angel));
             targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             targetDc.drawText(_x , _y , font, i.toString(), Graphics.TEXT_JUSTIFY_VCENTER | Graphics.TEXT_JUSTIFY_CENTER);
+            // targetDc.drawText(_x , _y , Graphics.FONT_MEDIUM, i.toString(), Graphics.TEXT_JUSTIFY_VCENTER | Graphics.TEXT_JUSTIFY_CENTER);
         }
 
                 //Use white to draw the hour and minute hands
@@ -121,11 +122,11 @@ function drawWatchface(dc){
         hourHandAngle = hourHandAngle / (12 * 60.0);
         hourHandAngle = hourHandAngle * Math.PI * 2;
 
-        drawHand(screenCenterPoint, hourHandAngle, 50, 0, 18, 6, targetDc);
+        drawHand(screenCenterPoint, hourHandAngle, radius * 0.4, 0, 18, 6, targetDc);
 
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-        drawHand(screenCenterPoint, minuteHandAngle, 100, 0, 12, 4, targetDc);
+        drawHand(screenCenterPoint, minuteHandAngle, radius * 0.85, 0, 12, 4, targetDc);
         // targetDc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
         // targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 80, 0, 8));
         drawCircleAtTheMiddle(targetDc);
