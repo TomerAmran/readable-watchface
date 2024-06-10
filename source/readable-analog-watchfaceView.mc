@@ -139,7 +139,7 @@ function drawWatchface(dc){
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 10);
         targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-        targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1] , 8);
+        targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1] , 7);
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 2);
         
