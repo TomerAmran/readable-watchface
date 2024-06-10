@@ -7,7 +7,7 @@ using Toybox.Time.Gregorian;
 class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var screenCenterPoint;
         var font;
-        var prevMinute = 0;
+        var prevMinute = -1;
 
     function initialize() {
         WatchFace.initialize();
@@ -18,10 +18,6 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
-
-        var bbr = Graphics.createBufferedBitmap({:width=>100, :height=>100});
-        var bb = bbr.get();
-        var bbDc = bb.getDc(); // doesn't work !    
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -125,12 +121,11 @@ function drawWatchface(dc){
         hourHandAngle = hourHandAngle / (12 * 60.0);
         hourHandAngle = hourHandAngle * Math.PI * 2;
 
-        targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, hourHandAngle, 40, 15, 16));
+        drawHand(screenCenterPoint, hourHandAngle, 40, 15, 14, targetDc);
 
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-        targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 90, 15, 12));
+        drawHand(screenCenterPoint, minuteHandAngle, 90, 15, 10, targetDc);
         // targetDc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
         // targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 80, 0, 8));
 }
@@ -143,14 +138,65 @@ function drawWatchface(dc){
         }
     }
 
-   function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {
+    function drawHand(centerPoint, angle, handLength, tailLength, width, targetDc) {
+        var coords = generateHandCoordinates(centerPoint, angle, handLength, tailLength, width);
+        targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        targetDc.fillPolygon(coords);
+        var scaledCords = scaleBy(coords, 0.9);
+        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        targetDc.fillPolygon(scaledCords);
+    }
+
+    // given two vertices pt0 and pt1, a desired distance, and a function rot()
+// that turns a vector 90 degrees outward:
+
+    function vecUnit(v) {
+        var len = Math.sqrt(v[0] * v[0] + v[1] * v[1]);
+        return [v[0] / len, v[1] / len ];
+    }
+
+    function vecMul(v, s) {
+        return [v[0] * s, v[1] * s ];
+    }
+
+    function aurthogonal(v) {
+        return [-v[1], v[0]];
+    }
+
+    function vecSub(v1, v2) {
+        return [v1[0] - v2[0], v1[1] - v2[1]];
+    }
+
+    function vecAdd(v1, v2) {
+        return [v1[0] + v2[0], v1[1] + v2[1]];
+    }
+
+    function intersect(line1, line2) {
+        var a1 = line1[1][0] - line1[0][0];
+        var b1 = line2[0][0] - line2[1][0];
+        var c1 = line2[0][0] - line1[0][0];
+
+        var a2 = line1[1][1] - line1[0][1];
+        var b2 = line2[0][1] - line2[1][1];
+        var c2 = line2[0][1] - line1[0][1];
+
+        var t = (b1*c2 - b2*c1) / (a2*b1 - a1*b2);
+
+    return [line1[0][0] + t * (line1[1][0] - line1[0][0]),line1[0][1] + t * (line1[1][1] - line1[0][1])]
+    ;
+}
+
+
+    function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {
         // Map out the coordinates of the watch hand
+        var handIsWiderBy = 8;
         var coords = [
             [-(width / 2), tailLength], 
-            [-(width / 2), -handLength], 
+            [ -((handIsWiderBy +width) / 2), -handLength], 
             [0, - handLength - 10], 
-            [width / 2, -handLength], 
+            [(handIsWiderBy + width) / 2, -handLength], 
             [width / 2, tailLength]];
+
         var len = coords.size();
         var result = new [len];
         var cos = Math.cos(angle);
@@ -164,6 +210,39 @@ function drawWatchface(dc){
             result[i] = [centerPoint[0] + x, centerPoint[1] + y];
         }
 
+        return result;
+    }
+
+    // function scaleBy(coords, scale) {
+    //     var polygonCenter = [0, 0];
+    //     for (var i = 0; i < coords.size(); i += 1) {
+    //         polygonCenter[0] += coords[i][0];
+    //         polygonCenter[1] += coords[i][1];
+    //     }
+    //     polygonCenter =[polygonCenter[0] / coords.size(), polygonCenter[1] / coords.size()];
+
+    //     for (var i = 0; i < coords.size(); i += 1) {
+    //         coords[i][0] = polygonCenter[0] + (coords[i][0] - polygonCenter[0]) * sqscale;
+    //         coords[i][1] = polygonCenter[1] + (coords[i][1] - polygonCenter[1]) * scale;
+    //     }
+    //     return coords;
+    // }
+
+    function scaleBy(coords, scale) {
+        var newLines = new [coords.size()];
+        for (var i = 0; i < coords.size(); i += 1) {
+            var p1 = coords[i];
+            var p2 = coords[(i + 1) % coords.size()];
+            var aorth = aurthogonal(vecUnit(vecSub(p2, p1)));
+            var p1a = vecAdd(p1, vecMul(aorth, scale));
+            var p2a = vecAdd(p2, vecMul(aorth, scale));
+            newLines[i] = [p1a, p2a];            
+        }
+        // find intersections of lines 
+        var result = new [coords.size()];
+        for (var i = 0; i < coords.size(); i += 1) {
+            result[i] = intersect(newLines[i], newLines[(i + 1) % coords.size()]);
+        }
         return result;
     }
 
