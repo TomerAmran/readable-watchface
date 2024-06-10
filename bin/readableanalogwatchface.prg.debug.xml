@@ -5,7 +5,7 @@
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="1" lineNum="25" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="1" lineNum="26" parent="globals" pc="268435470" symbol="getApp"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="2" lineNum="7" parent="globals/readable_analog_watchfaceView" pc="268435481" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B4315-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="4" lineNum="5" parent="globals/readable_analog_watchfaceApp" pc="268435513" symbol="&lt;init&gt;"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="5" lineNum="247" parent="globals/readable_analog_watchfaceView" pc="268435525" symbol="drawDateString"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="5" lineNum="248" parent="globals/readable_analog_watchfaceView" pc="268435528" symbol="drawDateString"/>
@@ -145,9 +145,9 @@
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="7" parent="globals/readable_analog_watchfaceApp" pc="268438020" symbol="initialize"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="8" parent="globals/readable_analog_watchfaceApp" pc="268438022" symbol="initialize"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="27" lineNum="16" parent="globals/readable_analog_watchfaceApp" pc="268438035" symbol="onStop"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268438038" symbol="WatchFace"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268438049" symbol="WatchFace"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="21" parent="globals/Rez/Layouts" pc="268438153" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B4315-00/source/Rez.mcgen" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268438038" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B4315-00/source/Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268438049" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B4315-00/source/Rez.mcgen" id="28" lineNum="21" parent="globals/Rez/Layouts" pc="268438153" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -303,7 +303,7 @@
         <entry arg="true" endPc="268438162" name="dc" stackId="1" startPc="268438038"/>
         <entry endPc="268438162" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268438049"/>
     </localVars>
-    <deviceInfo deviceVersion="5b8447e9176f735631b8dd60792cd28538afc321" partNumber="006-B3990-00"/>
+    <deviceInfo deviceVersion="fcbb2d71ec35a1d3f34d13093a6835d1c69522b8" partNumber="006-B4315-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoNotDisturbIcon"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
