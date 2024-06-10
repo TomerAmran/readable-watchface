@@ -121,30 +121,43 @@ function drawWatchface(dc){
         hourHandAngle = hourHandAngle / (12 * 60.0);
         hourHandAngle = hourHandAngle * Math.PI * 2;
 
-        drawHand(screenCenterPoint, hourHandAngle, 40, 15, 14, targetDc);
+        drawHand(screenCenterPoint, hourHandAngle, 50, 0, 18, 6, targetDc);
 
         // Draw the minute hand.
         minuteHandAngle = (clockTime.min / 60.0) * Math.PI * 2;
-        drawHand(screenCenterPoint, minuteHandAngle, 90, 15, 10, targetDc);
+        drawHand(screenCenterPoint, minuteHandAngle, 100, 0, 12, 4, targetDc);
         // targetDc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_LT_GRAY);
         // targetDc.fillPolygon(generateHandCoordinates(screenCenterPoint, minuteHandAngle, 80, 0, 8));
+        drawCircleAtTheMiddle(targetDc);
 }
-
-      function onUpdate(dc) {
-        System.println("onUpdate");
-        if (prevMinute != System.getClockTime().min) {
-            prevMinute = System.getClockTime().min;
-            drawWatchface(dc);
-        }
+        
+    function drawCircleAtTheMiddle(targetDc){
+        var width = targetDc.getWidth();
+        var height = targetDc.getHeight();
+        var radius = width / 2;
+        targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 10);
+        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1] , 8);
+        targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 2);
+        
+    }
+    function onUpdate(dc) {
+    System.println("onUpdate");
+    if (prevMinute != System.getClockTime().min) {
+        prevMinute = System.getClockTime().min;
+        drawWatchface(dc);
+    }
     }
 
-    function drawHand(centerPoint, angle, handLength, tailLength, width, targetDc) {
-        var coords = generateHandCoordinates(centerPoint, angle, handLength, tailLength, width);
+    function drawHand(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, targetDc) {
+        var coords = generateHandCoordinates(centerPoint, angle, handLength, tailLength, headWidth, tailWidth);
+        var scaledCords = scaleBy(coords, -2);
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        targetDc.fillPolygon(coords);
-        var scaledCords = scaleBy(coords, 0.9);
-        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(scaledCords);
+        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        targetDc.fillPolygon(coords);
     }
 
     // given two vertices pt0 and pt1, a desired distance, and a function rot()
@@ -187,15 +200,14 @@ function drawWatchface(dc){
 }
 
 
-    function generateHandCoordinates(centerPoint, angle, handLength, tailLength, width) {
+    function generateHandCoordinates(centerPoint, angle, handLength, tailLength, headWidth, tailWidth) {
         // Map out the coordinates of the watch hand
-        var handIsWiderBy = 8;
         var coords = [
-            [-(width / 2), tailLength], 
-            [ -((handIsWiderBy +width) / 2), -handLength], 
+            [-(tailWidth / 2), tailLength], 
+            [ -((headWidth) / 2), -handLength], 
             [0, - handLength - 10], 
-            [(handIsWiderBy + width) / 2, -handLength], 
-            [width / 2, tailLength]];
+            [(headWidth) / 2, -handLength], 
+            [tailWidth / 2, tailLength]];
 
         var len = coords.size();
         var result = new [len];
@@ -212,21 +224,6 @@ function drawWatchface(dc){
 
         return result;
     }
-
-    // function scaleBy(coords, scale) {
-    //     var polygonCenter = [0, 0];
-    //     for (var i = 0; i < coords.size(); i += 1) {
-    //         polygonCenter[0] += coords[i][0];
-    //         polygonCenter[1] += coords[i][1];
-    //     }
-    //     polygonCenter =[polygonCenter[0] / coords.size(), polygonCenter[1] / coords.size()];
-
-    //     for (var i = 0; i < coords.size(); i += 1) {
-    //         coords[i][0] = polygonCenter[0] + (coords[i][0] - polygonCenter[0]) * sqscale;
-    //         coords[i][1] = polygonCenter[1] + (coords[i][1] - polygonCenter[1]) * scale;
-    //     }
-    //     return coords;
-    // }
 
     function scaleBy(coords, scale) {
         var newLines = new [coords.size()];
