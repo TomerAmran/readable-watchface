@@ -847,7 +847,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.32 = lgetv %targetDc;
         %tmp.33 = getv function %tmp.32 :setColor;
         %tmp.34 = getm $.Toybox.Graphics;
-        %tmp.35 = getv %tmp.34 :COLOR_LT_GRAY;
+        %tmp.35 = getv %tmp.34 :COLOR_BLACK;
         %tmp.36 = getm $.Toybox.Graphics;
         %tmp.37 = getv %tmp.36 :COLOR_BLACK;
         invoke %tmp.32 %tmp.33(%tmp.35, %tmp.37);

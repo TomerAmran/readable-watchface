@@ -154,7 +154,7 @@ function drawWatchface(dc){
 
     function drawHand(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, targetDc) {
         var coords = generateHandCoordinates(centerPoint, angle, handLength, tailLength, headWidth, tailWidth);
-        var scaledCords = scaleBy(coords, -4);
+        var scaledCords = scaleBy(coords, -3);
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(scaledCords);
         targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);

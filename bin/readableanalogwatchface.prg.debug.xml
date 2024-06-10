@@ -18,136 +18,136 @@
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="7" lineNum="158" parent="globals/readable_analog_watchfaceView" pc="268435673" symbol="drawHand"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="7" lineNum="159" parent="globals/readable_analog_watchfaceView" pc="268435689" symbol="drawHand"/>
         <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="7" lineNum="160" parent="globals/readable_analog_watchfaceView" pc="268435701" symbol="drawHand"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="7" lineNum="161" parent="globals/readable_analog_watchfaceView" pc="268435717" symbol="drawHand"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="188" parent="globals/readable_analog_watchfaceView" pc="268435730" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="189" parent="globals/readable_analog_watchfaceView" pc="268435733" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="190" parent="globals/readable_analog_watchfaceView" pc="268435749" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="191" parent="globals/readable_analog_watchfaceView" pc="268435765" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="193" parent="globals/readable_analog_watchfaceView" pc="268435780" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="194" parent="globals/readable_analog_watchfaceView" pc="268435798" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="195" parent="globals/readable_analog_watchfaceView" pc="268435816" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="197" parent="globals/readable_analog_watchfaceView" pc="268435833" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="199" parent="globals/readable_analog_watchfaceView" pc="268435858" symbol="intersect"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="229" parent="globals/readable_analog_watchfaceView" pc="268435920" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="230" parent="globals/readable_analog_watchfaceView" pc="268435923" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="231" parent="globals/readable_analog_watchfaceView" pc="268435933" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="232" parent="globals/readable_analog_watchfaceView" pc="268435949" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="233" parent="globals/readable_analog_watchfaceView" pc="268435956" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="234" parent="globals/readable_analog_watchfaceView" pc="268435974" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="235" parent="globals/readable_analog_watchfaceView" pc="268436004" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="236" parent="globals/readable_analog_watchfaceView" pc="268436028" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="237" parent="globals/readable_analog_watchfaceView" pc="268436052" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="240" parent="globals/readable_analog_watchfaceView" pc="268436081" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="241" parent="globals/readable_analog_watchfaceView" pc="268436091" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="242" parent="globals/readable_analog_watchfaceView" pc="268436107" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="244" parent="globals/readable_analog_watchfaceView" pc="268436151" symbol="scaleBy"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="17" parent="globals/readable_analog_watchfaceView" pc="268436154" symbol="onLayout"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="18" parent="globals/readable_analog_watchfaceView" pc="268436156" symbol="onLayout"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="19" parent="globals/readable_analog_watchfaceView" pc="268436189" symbol="onLayout"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="20" parent="globals/readable_analog_watchfaceView" pc="268436226" symbol="onLayout"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="12" lineNum="172" parent="globals/readable_analog_watchfaceView" pc="268436265" symbol="vecMul"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="12" lineNum="173" parent="globals/readable_analog_watchfaceView" pc="268436267" symbol="vecMul"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="167" parent="globals/readable_analog_watchfaceView" pc="268436293" symbol="vecUnit"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="168" parent="globals/readable_analog_watchfaceView" pc="268436296" symbol="vecUnit"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="169" parent="globals/readable_analog_watchfaceView" pc="268436332" symbol="vecUnit"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="14" lineNum="184" parent="globals/readable_analog_watchfaceView" pc="268436358" symbol="vecAdd"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="14" lineNum="185" parent="globals/readable_analog_watchfaceView" pc="268436360" symbol="vecAdd"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="204" parent="globals/readable_analog_watchfaceView" pc="268436391" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="206" parent="globals/readable_analog_watchfaceView" pc="268436394" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="213" parent="globals/readable_analog_watchfaceView" pc="268436508" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="214" parent="globals/readable_analog_watchfaceView" pc="268436517" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="215" parent="globals/readable_analog_watchfaceView" pc="268436522" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="216" parent="globals/readable_analog_watchfaceView" pc="268436539" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="219" parent="globals/readable_analog_watchfaceView" pc="268436556" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="220" parent="globals/readable_analog_watchfaceView" pc="268436567" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="221" parent="globals/readable_analog_watchfaceView" pc="268436597" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="223" parent="globals/readable_analog_watchfaceView" pc="268436627" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="226" parent="globals/readable_analog_watchfaceView" pc="268436667" symbol="generateHandCoordinates"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="16" lineNum="180" parent="globals/readable_analog_watchfaceView" pc="268436670" symbol="vecSub"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="16" lineNum="181" parent="globals/readable_analog_watchfaceView" pc="268436672" symbol="vecSub"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="135" parent="globals/readable_analog_watchfaceView" pc="268436703" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="136" parent="globals/readable_analog_watchfaceView" pc="268436706" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="137" parent="globals/readable_analog_watchfaceView" pc="268436715" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="138" parent="globals/readable_analog_watchfaceView" pc="268436724" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="139" parent="globals/readable_analog_watchfaceView" pc="268436731" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="140" parent="globals/readable_analog_watchfaceView" pc="268436747" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="141" parent="globals/readable_analog_watchfaceView" pc="268436774" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="142" parent="globals/readable_analog_watchfaceView" pc="268436786" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="143" parent="globals/readable_analog_watchfaceView" pc="268436813" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="144" parent="globals/readable_analog_watchfaceView" pc="268436829" symbol="drawCircleAtTheMiddle"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="19" lineNum="12" parent="globals/readable_analog_watchfaceView" pc="268436857" symbol="initialize"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="19" lineNum="13" parent="globals/readable_analog_watchfaceView" pc="268436859" symbol="initialize"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="41" parent="globals/readable_analog_watchfaceView" pc="268436872" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="42" parent="globals/readable_analog_watchfaceView" pc="268436875" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="44" parent="globals/readable_analog_watchfaceView" pc="268436893" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="46" parent="globals/readable_analog_watchfaceView" pc="268436893" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="45" parent="globals/readable_analog_watchfaceView" pc="268436893" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="43" parent="globals/readable_analog_watchfaceView" pc="268436893" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="47" parent="globals/readable_analog_watchfaceView" pc="268436902" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="48" parent="globals/readable_analog_watchfaceView" pc="268436914" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="51" parent="globals/readable_analog_watchfaceView" pc="268436914" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="49" parent="globals/readable_analog_watchfaceView" pc="268436914" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="50" parent="globals/readable_analog_watchfaceView" pc="268436914" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="53" parent="globals/readable_analog_watchfaceView" pc="268436918" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="54" parent="globals/readable_analog_watchfaceView" pc="268436927" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="55" parent="globals/readable_analog_watchfaceView" pc="268436936" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="58" parent="globals/readable_analog_watchfaceView" pc="268436943" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="59" parent="globals/readable_analog_watchfaceView" pc="268436959" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="61" parent="globals/readable_analog_watchfaceView" pc="268436985" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="62" parent="globals/readable_analog_watchfaceView" pc="268437002" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="65" parent="globals/readable_analog_watchfaceView" pc="268437045" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="67" parent="globals/readable_analog_watchfaceView" pc="268437080" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="68" parent="globals/readable_analog_watchfaceView" pc="268437121" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="69" parent="globals/readable_analog_watchfaceView" pc="268437138" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="72" parent="globals/readable_analog_watchfaceView" pc="268437178" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="73" parent="globals/readable_analog_watchfaceView" pc="268437193" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="74" parent="globals/readable_analog_watchfaceView" pc="268437215" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="75" parent="globals/readable_analog_watchfaceView" pc="268437227" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="78" parent="globals/readable_analog_watchfaceView" pc="268437249" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="79" parent="globals/readable_analog_watchfaceView" pc="268437256" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="80" parent="globals/readable_analog_watchfaceView" pc="268437268" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="81" parent="globals/readable_analog_watchfaceView" pc="268437275" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="82" parent="globals/readable_analog_watchfaceView" pc="268437278" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="83" parent="globals/readable_analog_watchfaceView" pc="268437282" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="84" parent="globals/readable_analog_watchfaceView" pc="268437286" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="90" parent="globals/readable_analog_watchfaceView" pc="268437408" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="91" parent="globals/readable_analog_watchfaceView" pc="268437415" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="92" parent="globals/readable_analog_watchfaceView" pc="268437432" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="93" parent="globals/readable_analog_watchfaceView" pc="268437449" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="95" parent="globals/readable_analog_watchfaceView" pc="268437465" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="96" parent="globals/readable_analog_watchfaceView" pc="268437481" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="103" parent="globals/readable_analog_watchfaceView" pc="268437567" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="107" parent="globals/readable_analog_watchfaceView" pc="268437589" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="108" parent="globals/readable_analog_watchfaceView" pc="268437599" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="109" parent="globals/readable_analog_watchfaceView" pc="268437611" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="110" parent="globals/readable_analog_watchfaceView" pc="268437627" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="111" parent="globals/readable_analog_watchfaceView" pc="268437655" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="112" parent="globals/readable_analog_watchfaceView" pc="268437684" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="113" parent="globals/readable_analog_watchfaceView" pc="268437701" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="118" parent="globals/readable_analog_watchfaceView" pc="268437739" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="121" parent="globals/readable_analog_watchfaceView" pc="268437755" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="122" parent="globals/readable_analog_watchfaceView" pc="268437776" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="123" parent="globals/readable_analog_watchfaceView" pc="268437786" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="125" parent="globals/readable_analog_watchfaceView" pc="268437799" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="128" parent="globals/readable_analog_watchfaceView" pc="268437830" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="129" parent="globals/readable_analog_watchfaceView" pc="268437853" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="132" parent="globals/readable_analog_watchfaceView" pc="268437884" symbol="drawWatchface"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="147" parent="globals/readable_analog_watchfaceView" pc="268437896" symbol="onUpdate"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="148" parent="globals/readable_analog_watchfaceView" pc="268437898" symbol="onUpdate"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="149" parent="globals/readable_analog_watchfaceView" pc="268437916" symbol="onUpdate"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="150" parent="globals/readable_analog_watchfaceView" pc="268437940" symbol="onUpdate"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="151" parent="globals/readable_analog_watchfaceView" pc="268437962" symbol="onUpdate"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="23" lineNum="176" parent="globals/readable_analog_watchfaceView" pc="268437977" symbol="aurthogonal"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="23" lineNum="177" parent="globals/readable_analog_watchfaceView" pc="268437979" symbol="aurthogonal"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="24" lineNum="12" parent="globals/readable_analog_watchfaceApp" pc="268438001" symbol="onStart"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="25" lineNum="20" parent="globals/readable_analog_watchfaceApp" pc="268438004" symbol="getInitialView"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="25" lineNum="21" parent="globals/readable_analog_watchfaceApp" pc="268438006" symbol="getInitialView"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="7" parent="globals/readable_analog_watchfaceApp" pc="268438036" symbol="initialize"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="8" parent="globals/readable_analog_watchfaceApp" pc="268438038" symbol="initialize"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="27" lineNum="16" parent="globals/readable_analog_watchfaceApp" pc="268438051" symbol="onStop"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268438054" symbol="WatchFace"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268438065" symbol="WatchFace"/>
-        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="21" parent="globals/Rez/Layouts" pc="268438169" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="7" lineNum="161" parent="globals/readable_analog_watchfaceView" pc="268435713" symbol="drawHand"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="188" parent="globals/readable_analog_watchfaceView" pc="268435726" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="189" parent="globals/readable_analog_watchfaceView" pc="268435729" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="190" parent="globals/readable_analog_watchfaceView" pc="268435745" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="191" parent="globals/readable_analog_watchfaceView" pc="268435761" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="193" parent="globals/readable_analog_watchfaceView" pc="268435776" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="194" parent="globals/readable_analog_watchfaceView" pc="268435794" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="195" parent="globals/readable_analog_watchfaceView" pc="268435812" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="197" parent="globals/readable_analog_watchfaceView" pc="268435829" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="9" lineNum="199" parent="globals/readable_analog_watchfaceView" pc="268435854" symbol="intersect"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="229" parent="globals/readable_analog_watchfaceView" pc="268435916" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="230" parent="globals/readable_analog_watchfaceView" pc="268435919" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="231" parent="globals/readable_analog_watchfaceView" pc="268435929" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="232" parent="globals/readable_analog_watchfaceView" pc="268435945" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="233" parent="globals/readable_analog_watchfaceView" pc="268435952" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="234" parent="globals/readable_analog_watchfaceView" pc="268435970" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="235" parent="globals/readable_analog_watchfaceView" pc="268436000" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="236" parent="globals/readable_analog_watchfaceView" pc="268436024" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="237" parent="globals/readable_analog_watchfaceView" pc="268436048" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="240" parent="globals/readable_analog_watchfaceView" pc="268436077" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="241" parent="globals/readable_analog_watchfaceView" pc="268436087" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="242" parent="globals/readable_analog_watchfaceView" pc="268436103" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="10" lineNum="244" parent="globals/readable_analog_watchfaceView" pc="268436147" symbol="scaleBy"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="17" parent="globals/readable_analog_watchfaceView" pc="268436150" symbol="onLayout"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="18" parent="globals/readable_analog_watchfaceView" pc="268436152" symbol="onLayout"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="19" parent="globals/readable_analog_watchfaceView" pc="268436185" symbol="onLayout"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="11" lineNum="20" parent="globals/readable_analog_watchfaceView" pc="268436222" symbol="onLayout"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="12" lineNum="172" parent="globals/readable_analog_watchfaceView" pc="268436261" symbol="vecMul"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="12" lineNum="173" parent="globals/readable_analog_watchfaceView" pc="268436263" symbol="vecMul"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="167" parent="globals/readable_analog_watchfaceView" pc="268436289" symbol="vecUnit"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="168" parent="globals/readable_analog_watchfaceView" pc="268436292" symbol="vecUnit"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="13" lineNum="169" parent="globals/readable_analog_watchfaceView" pc="268436328" symbol="vecUnit"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="14" lineNum="184" parent="globals/readable_analog_watchfaceView" pc="268436354" symbol="vecAdd"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="14" lineNum="185" parent="globals/readable_analog_watchfaceView" pc="268436356" symbol="vecAdd"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="204" parent="globals/readable_analog_watchfaceView" pc="268436387" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="206" parent="globals/readable_analog_watchfaceView" pc="268436390" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="213" parent="globals/readable_analog_watchfaceView" pc="268436504" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="214" parent="globals/readable_analog_watchfaceView" pc="268436513" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="215" parent="globals/readable_analog_watchfaceView" pc="268436518" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="216" parent="globals/readable_analog_watchfaceView" pc="268436535" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="219" parent="globals/readable_analog_watchfaceView" pc="268436552" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="220" parent="globals/readable_analog_watchfaceView" pc="268436563" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="221" parent="globals/readable_analog_watchfaceView" pc="268436593" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="223" parent="globals/readable_analog_watchfaceView" pc="268436623" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="15" lineNum="226" parent="globals/readable_analog_watchfaceView" pc="268436663" symbol="generateHandCoordinates"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="16" lineNum="180" parent="globals/readable_analog_watchfaceView" pc="268436666" symbol="vecSub"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="16" lineNum="181" parent="globals/readable_analog_watchfaceView" pc="268436668" symbol="vecSub"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="135" parent="globals/readable_analog_watchfaceView" pc="268436699" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="136" parent="globals/readable_analog_watchfaceView" pc="268436702" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="137" parent="globals/readable_analog_watchfaceView" pc="268436711" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="138" parent="globals/readable_analog_watchfaceView" pc="268436720" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="139" parent="globals/readable_analog_watchfaceView" pc="268436727" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="140" parent="globals/readable_analog_watchfaceView" pc="268436743" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="141" parent="globals/readable_analog_watchfaceView" pc="268436770" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="142" parent="globals/readable_analog_watchfaceView" pc="268436782" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="143" parent="globals/readable_analog_watchfaceView" pc="268436809" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="17" lineNum="144" parent="globals/readable_analog_watchfaceView" pc="268436825" symbol="drawCircleAtTheMiddle"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="19" lineNum="12" parent="globals/readable_analog_watchfaceView" pc="268436853" symbol="initialize"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="19" lineNum="13" parent="globals/readable_analog_watchfaceView" pc="268436855" symbol="initialize"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="41" parent="globals/readable_analog_watchfaceView" pc="268436868" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="42" parent="globals/readable_analog_watchfaceView" pc="268436871" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="44" parent="globals/readable_analog_watchfaceView" pc="268436889" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="46" parent="globals/readable_analog_watchfaceView" pc="268436889" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="45" parent="globals/readable_analog_watchfaceView" pc="268436889" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="43" parent="globals/readable_analog_watchfaceView" pc="268436889" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="47" parent="globals/readable_analog_watchfaceView" pc="268436898" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="48" parent="globals/readable_analog_watchfaceView" pc="268436910" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="51" parent="globals/readable_analog_watchfaceView" pc="268436910" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="49" parent="globals/readable_analog_watchfaceView" pc="268436910" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="50" parent="globals/readable_analog_watchfaceView" pc="268436910" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="53" parent="globals/readable_analog_watchfaceView" pc="268436914" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="54" parent="globals/readable_analog_watchfaceView" pc="268436923" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="55" parent="globals/readable_analog_watchfaceView" pc="268436932" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="58" parent="globals/readable_analog_watchfaceView" pc="268436939" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="59" parent="globals/readable_analog_watchfaceView" pc="268436955" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="61" parent="globals/readable_analog_watchfaceView" pc="268436981" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="62" parent="globals/readable_analog_watchfaceView" pc="268436998" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="65" parent="globals/readable_analog_watchfaceView" pc="268437041" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="67" parent="globals/readable_analog_watchfaceView" pc="268437076" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="68" parent="globals/readable_analog_watchfaceView" pc="268437117" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="69" parent="globals/readable_analog_watchfaceView" pc="268437134" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="72" parent="globals/readable_analog_watchfaceView" pc="268437174" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="73" parent="globals/readable_analog_watchfaceView" pc="268437189" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="74" parent="globals/readable_analog_watchfaceView" pc="268437211" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="75" parent="globals/readable_analog_watchfaceView" pc="268437223" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="78" parent="globals/readable_analog_watchfaceView" pc="268437245" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="79" parent="globals/readable_analog_watchfaceView" pc="268437252" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="80" parent="globals/readable_analog_watchfaceView" pc="268437264" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="81" parent="globals/readable_analog_watchfaceView" pc="268437271" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="82" parent="globals/readable_analog_watchfaceView" pc="268437274" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="83" parent="globals/readable_analog_watchfaceView" pc="268437278" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="84" parent="globals/readable_analog_watchfaceView" pc="268437282" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="90" parent="globals/readable_analog_watchfaceView" pc="268437404" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="91" parent="globals/readable_analog_watchfaceView" pc="268437411" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="92" parent="globals/readable_analog_watchfaceView" pc="268437428" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="93" parent="globals/readable_analog_watchfaceView" pc="268437445" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="95" parent="globals/readable_analog_watchfaceView" pc="268437461" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="96" parent="globals/readable_analog_watchfaceView" pc="268437477" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="103" parent="globals/readable_analog_watchfaceView" pc="268437563" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="107" parent="globals/readable_analog_watchfaceView" pc="268437585" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="108" parent="globals/readable_analog_watchfaceView" pc="268437595" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="109" parent="globals/readable_analog_watchfaceView" pc="268437607" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="110" parent="globals/readable_analog_watchfaceView" pc="268437623" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="111" parent="globals/readable_analog_watchfaceView" pc="268437651" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="112" parent="globals/readable_analog_watchfaceView" pc="268437680" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="113" parent="globals/readable_analog_watchfaceView" pc="268437697" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="118" parent="globals/readable_analog_watchfaceView" pc="268437735" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="121" parent="globals/readable_analog_watchfaceView" pc="268437751" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="122" parent="globals/readable_analog_watchfaceView" pc="268437772" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="123" parent="globals/readable_analog_watchfaceView" pc="268437782" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="125" parent="globals/readable_analog_watchfaceView" pc="268437795" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="128" parent="globals/readable_analog_watchfaceView" pc="268437826" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="129" parent="globals/readable_analog_watchfaceView" pc="268437849" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="21" lineNum="132" parent="globals/readable_analog_watchfaceView" pc="268437880" symbol="drawWatchface"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="147" parent="globals/readable_analog_watchfaceView" pc="268437892" symbol="onUpdate"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="148" parent="globals/readable_analog_watchfaceView" pc="268437894" symbol="onUpdate"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="149" parent="globals/readable_analog_watchfaceView" pc="268437912" symbol="onUpdate"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="150" parent="globals/readable_analog_watchfaceView" pc="268437936" symbol="onUpdate"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="22" lineNum="151" parent="globals/readable_analog_watchfaceView" pc="268437958" symbol="onUpdate"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="23" lineNum="176" parent="globals/readable_analog_watchfaceView" pc="268437973" symbol="aurthogonal"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" id="23" lineNum="177" parent="globals/readable_analog_watchfaceView" pc="268437975" symbol="aurthogonal"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="24" lineNum="12" parent="globals/readable_analog_watchfaceApp" pc="268437997" symbol="onStart"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="25" lineNum="20" parent="globals/readable_analog_watchfaceApp" pc="268438000" symbol="getInitialView"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="25" lineNum="21" parent="globals/readable_analog_watchfaceApp" pc="268438002" symbol="getInitialView"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="7" parent="globals/readable_analog_watchfaceApp" pc="268438032" symbol="initialize"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="26" lineNum="8" parent="globals/readable_analog_watchfaceApp" pc="268438034" symbol="initialize"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceApp.mc" id="27" lineNum="16" parent="globals/readable_analog_watchfaceApp" pc="268438047" symbol="onStop"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268438050" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268438061" symbol="WatchFace"/>
+        <entry filename="/Users/tomera/readable-analog-watchface/bin/gen/006-B3990-00/source/Rez.mcgen" id="28" lineNum="21" parent="globals/Rez/Layouts" pc="268438165" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -215,93 +215,93 @@
         <entry arg="true" endPc="268435633" name="y" stackId="3" startPc="268435525"/>
         <entry endPc="268435632" name="info" stackId="4" startPc="268435528"/>
         <entry endPc="268435632" name="dateStr" stackId="5" startPc="268435528"/>
-        <entry arg="true" endPc="268435729" name="centerPoint" stackId="1" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="angle" stackId="2" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="handLength" stackId="3" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="tailLength" stackId="4" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="headWidth" stackId="5" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="tailWidth" stackId="6" startPc="268435634"/>
-        <entry arg="true" endPc="268435729" name="targetDc" stackId="7" startPc="268435634"/>
-        <entry endPc="268435728" name="coords" stackId="8" startPc="268435637"/>
-        <entry endPc="268435728" name="scaledCords" stackId="9" startPc="268435637"/>
-        <entry arg="true" endPc="268435919" name="line1" stackId="1" startPc="268435730"/>
-        <entry arg="true" endPc="268435919" name="line2" stackId="2" startPc="268435730"/>
-        <entry endPc="268435919" name="a1" stackId="3" startPc="268435733"/>
-        <entry endPc="268435919" name="b1" stackId="4" startPc="268435733"/>
-        <entry endPc="268435919" name="c1" stackId="5" startPc="268435733"/>
-        <entry endPc="268435919" name="a2" stackId="6" startPc="268435733"/>
-        <entry endPc="268435919" name="b2" stackId="7" startPc="268435733"/>
-        <entry endPc="268435919" name="c2" stackId="8" startPc="268435733"/>
-        <entry endPc="268435919" name="t" stackId="9" startPc="268435733"/>
-        <entry arg="true" endPc="268436153" name="coords" stackId="1" startPc="268435920"/>
-        <entry arg="true" endPc="268436153" name="scale" stackId="2" startPc="268435920"/>
-        <entry endPc="268436153" name="newLines" stackId="3" startPc="268435923"/>
-        <entry endPc="268436080" name="i" stackId="4" startPc="268435949"/>
-        <entry endPc="268436070" name="p1" stackId="5" startPc="268435949"/>
-        <entry endPc="268436070" name="p2" stackId="6" startPc="268435949"/>
-        <entry endPc="268436070" name="aorth" stackId="7" startPc="268435949"/>
-        <entry endPc="268436070" name="p1a" stackId="8" startPc="268435949"/>
-        <entry endPc="268436070" name="p2a" stackId="9" startPc="268435949"/>
-        <entry endPc="268436153" name="result" stackId="10" startPc="268435923"/>
-        <entry endPc="268436150" name="i" stackId="11" startPc="268436107"/>
-        <entry arg="true" endPc="268436264" name="dc" stackId="1" startPc="268436154"/>
-        <entry arg="true" endPc="268436292" name="v" stackId="1" startPc="268436265"/>
-        <entry arg="true" endPc="268436292" name="s" stackId="2" startPc="268436265"/>
-        <entry arg="true" endPc="268436357" name="v" stackId="1" startPc="268436293"/>
-        <entry endPc="268436357" name="len" stackId="2" startPc="268436296"/>
-        <entry arg="true" endPc="268436390" name="v1" stackId="1" startPc="268436358"/>
-        <entry arg="true" endPc="268436390" name="v2" stackId="2" startPc="268436358"/>
-        <entry arg="true" endPc="268436669" name="centerPoint" stackId="1" startPc="268436391"/>
-        <entry arg="true" endPc="268436669" name="angle" stackId="2" startPc="268436391"/>
-        <entry arg="true" endPc="268436669" name="handLength" stackId="3" startPc="268436391"/>
-        <entry arg="true" endPc="268436669" name="tailLength" stackId="4" startPc="268436391"/>
-        <entry arg="true" endPc="268436669" name="headWidth" stackId="5" startPc="268436391"/>
-        <entry arg="true" endPc="268436669" name="tailWidth" stackId="6" startPc="268436391"/>
-        <entry endPc="268436669" name="coords" stackId="7" startPc="268436394"/>
-        <entry endPc="268436669" name="len" stackId="8" startPc="268436394"/>
-        <entry endPc="268436669" name="result" stackId="9" startPc="268436394"/>
-        <entry endPc="268436669" name="cos" stackId="10" startPc="268436394"/>
-        <entry endPc="268436669" name="sin" stackId="11" startPc="268436394"/>
-        <entry endPc="268436666" name="i" stackId="12" startPc="268436567"/>
-        <entry endPc="268436656" name="x" stackId="13" startPc="268436567"/>
-        <entry endPc="268436656" name="y" stackId="14" startPc="268436567"/>
-        <entry arg="true" endPc="268436702" name="v1" stackId="1" startPc="268436670"/>
-        <entry arg="true" endPc="268436702" name="v2" stackId="2" startPc="268436670"/>
-        <entry arg="true" endPc="268436856" name="targetDc" stackId="1" startPc="268436703"/>
-        <entry endPc="268436855" name="width" stackId="2" startPc="268436706"/>
-        <entry endPc="268436855" name="height" stackId="3" startPc="268436706"/>
-        <entry endPc="268436855" name="radius" stackId="4" startPc="268436706"/>
-        <entry arg="true" endPc="268437895" name="dc" stackId="1" startPc="268436872"/>
-        <entry endPc="268437894" name="width" stackId="2" startPc="268436875"/>
-        <entry endPc="268437894" name="height" stackId="3" startPc="268436875"/>
-        <entry endPc="268437894" name="radius" stackId="4" startPc="268436875"/>
-        <entry endPc="268437894" name="screenWidth" stackId="5" startPc="268436875"/>
-        <entry endPc="268437894" name="clockTime" stackId="6" startPc="268436875"/>
-        <entry endPc="268437894" name="minuteHandAngle" stackId="7" startPc="268436875"/>
-        <entry endPc="268437894" name="hourHandAngle" stackId="8" startPc="268436875"/>
-        <entry endPc="268437894" name="secondHand" stackId="9" startPc="268436875"/>
-        <entry endPc="268437894" name="targetDc" stackId="10" startPc="268436875"/>
-        <entry endPc="268437894" name="dataString" stackId="11" startPc="268436875"/>
-        <entry endPc="268437894" name="tickAngle" stackId="12" startPc="268436875"/>
-        <entry endPc="268437588" name="i" stackId="13" startPc="268437268"/>
-        <entry endPc="268437578" name="x" stackId="14" startPc="268437268"/>
-        <entry endPc="268437578" name="y" stackId="15" startPc="268437268"/>
-        <entry endPc="268437578" name="tickWidth" stackId="16" startPc="268437268"/>
-        <entry endPc="268437578" name="tickHeight" stackId="17" startPc="268437268"/>
-        <entry endPc="268437578" name="points" stackId="18" startPc="268437268"/>
-        <entry endPc="268437578" name="angel" stackId="19" startPc="268437268"/>
-        <entry endPc="268437578" name="sin" stackId="20" startPc="268437268"/>
-        <entry endPc="268437578" name="cos" stackId="21" startPc="268437268"/>
-        <entry endPc="268437566" name="j" stackId="22" startPc="268437481"/>
-        <entry endPc="268437894" name="distance" stackId="23" startPc="268436875"/>
-        <entry endPc="268437738" name="i" stackId="24" startPc="268437611"/>
-        <entry endPc="268437728" name="angel" stackId="25" startPc="268437611"/>
-        <entry endPc="268437728" name="_x" stackId="26" startPc="268437611"/>
-        <entry endPc="268437728" name="_y" stackId="27" startPc="268437611"/>
-        <entry arg="true" endPc="268437976" name="dc" stackId="1" startPc="268437896"/>
-        <entry arg="true" endPc="268438000" name="v" stackId="1" startPc="268437977"/>
-        <entry arg="true" endPc="268438178" name="dc" stackId="1" startPc="268438054"/>
-        <entry endPc="268438178" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268438065"/>
+        <entry arg="true" endPc="268435725" name="centerPoint" stackId="1" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="angle" stackId="2" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="handLength" stackId="3" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="tailLength" stackId="4" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="headWidth" stackId="5" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="tailWidth" stackId="6" startPc="268435634"/>
+        <entry arg="true" endPc="268435725" name="targetDc" stackId="7" startPc="268435634"/>
+        <entry endPc="268435724" name="coords" stackId="8" startPc="268435637"/>
+        <entry endPc="268435724" name="scaledCords" stackId="9" startPc="268435637"/>
+        <entry arg="true" endPc="268435915" name="line1" stackId="1" startPc="268435726"/>
+        <entry arg="true" endPc="268435915" name="line2" stackId="2" startPc="268435726"/>
+        <entry endPc="268435915" name="a1" stackId="3" startPc="268435729"/>
+        <entry endPc="268435915" name="b1" stackId="4" startPc="268435729"/>
+        <entry endPc="268435915" name="c1" stackId="5" startPc="268435729"/>
+        <entry endPc="268435915" name="a2" stackId="6" startPc="268435729"/>
+        <entry endPc="268435915" name="b2" stackId="7" startPc="268435729"/>
+        <entry endPc="268435915" name="c2" stackId="8" startPc="268435729"/>
+        <entry endPc="268435915" name="t" stackId="9" startPc="268435729"/>
+        <entry arg="true" endPc="268436149" name="coords" stackId="1" startPc="268435916"/>
+        <entry arg="true" endPc="268436149" name="scale" stackId="2" startPc="268435916"/>
+        <entry endPc="268436149" name="newLines" stackId="3" startPc="268435919"/>
+        <entry endPc="268436076" name="i" stackId="4" startPc="268435945"/>
+        <entry endPc="268436066" name="p1" stackId="5" startPc="268435945"/>
+        <entry endPc="268436066" name="p2" stackId="6" startPc="268435945"/>
+        <entry endPc="268436066" name="aorth" stackId="7" startPc="268435945"/>
+        <entry endPc="268436066" name="p1a" stackId="8" startPc="268435945"/>
+        <entry endPc="268436066" name="p2a" stackId="9" startPc="268435945"/>
+        <entry endPc="268436149" name="result" stackId="10" startPc="268435919"/>
+        <entry endPc="268436146" name="i" stackId="11" startPc="268436103"/>
+        <entry arg="true" endPc="268436260" name="dc" stackId="1" startPc="268436150"/>
+        <entry arg="true" endPc="268436288" name="v" stackId="1" startPc="268436261"/>
+        <entry arg="true" endPc="268436288" name="s" stackId="2" startPc="268436261"/>
+        <entry arg="true" endPc="268436353" name="v" stackId="1" startPc="268436289"/>
+        <entry endPc="268436353" name="len" stackId="2" startPc="268436292"/>
+        <entry arg="true" endPc="268436386" name="v1" stackId="1" startPc="268436354"/>
+        <entry arg="true" endPc="268436386" name="v2" stackId="2" startPc="268436354"/>
+        <entry arg="true" endPc="268436665" name="centerPoint" stackId="1" startPc="268436387"/>
+        <entry arg="true" endPc="268436665" name="angle" stackId="2" startPc="268436387"/>
+        <entry arg="true" endPc="268436665" name="handLength" stackId="3" startPc="268436387"/>
+        <entry arg="true" endPc="268436665" name="tailLength" stackId="4" startPc="268436387"/>
+        <entry arg="true" endPc="268436665" name="headWidth" stackId="5" startPc="268436387"/>
+        <entry arg="true" endPc="268436665" name="tailWidth" stackId="6" startPc="268436387"/>
+        <entry endPc="268436665" name="coords" stackId="7" startPc="268436390"/>
+        <entry endPc="268436665" name="len" stackId="8" startPc="268436390"/>
+        <entry endPc="268436665" name="result" stackId="9" startPc="268436390"/>
+        <entry endPc="268436665" name="cos" stackId="10" startPc="268436390"/>
+        <entry endPc="268436665" name="sin" stackId="11" startPc="268436390"/>
+        <entry endPc="268436662" name="i" stackId="12" startPc="268436563"/>
+        <entry endPc="268436652" name="x" stackId="13" startPc="268436563"/>
+        <entry endPc="268436652" name="y" stackId="14" startPc="268436563"/>
+        <entry arg="true" endPc="268436698" name="v1" stackId="1" startPc="268436666"/>
+        <entry arg="true" endPc="268436698" name="v2" stackId="2" startPc="268436666"/>
+        <entry arg="true" endPc="268436852" name="targetDc" stackId="1" startPc="268436699"/>
+        <entry endPc="268436851" name="width" stackId="2" startPc="268436702"/>
+        <entry endPc="268436851" name="height" stackId="3" startPc="268436702"/>
+        <entry endPc="268436851" name="radius" stackId="4" startPc="268436702"/>
+        <entry arg="true" endPc="268437891" name="dc" stackId="1" startPc="268436868"/>
+        <entry endPc="268437890" name="width" stackId="2" startPc="268436871"/>
+        <entry endPc="268437890" name="height" stackId="3" startPc="268436871"/>
+        <entry endPc="268437890" name="radius" stackId="4" startPc="268436871"/>
+        <entry endPc="268437890" name="screenWidth" stackId="5" startPc="268436871"/>
+        <entry endPc="268437890" name="clockTime" stackId="6" startPc="268436871"/>
+        <entry endPc="268437890" name="minuteHandAngle" stackId="7" startPc="268436871"/>
+        <entry endPc="268437890" name="hourHandAngle" stackId="8" startPc="268436871"/>
+        <entry endPc="268437890" name="secondHand" stackId="9" startPc="268436871"/>
+        <entry endPc="268437890" name="targetDc" stackId="10" startPc="268436871"/>
+        <entry endPc="268437890" name="dataString" stackId="11" startPc="268436871"/>
+        <entry endPc="268437890" name="tickAngle" stackId="12" startPc="268436871"/>
+        <entry endPc="268437584" name="i" stackId="13" startPc="268437264"/>
+        <entry endPc="268437574" name="x" stackId="14" startPc="268437264"/>
+        <entry endPc="268437574" name="y" stackId="15" startPc="268437264"/>
+        <entry endPc="268437574" name="tickWidth" stackId="16" startPc="268437264"/>
+        <entry endPc="268437574" name="tickHeight" stackId="17" startPc="268437264"/>
+        <entry endPc="268437574" name="points" stackId="18" startPc="268437264"/>
+        <entry endPc="268437574" name="angel" stackId="19" startPc="268437264"/>
+        <entry endPc="268437574" name="sin" stackId="20" startPc="268437264"/>
+        <entry endPc="268437574" name="cos" stackId="21" startPc="268437264"/>
+        <entry endPc="268437562" name="j" stackId="22" startPc="268437477"/>
+        <entry endPc="268437890" name="distance" stackId="23" startPc="268436871"/>
+        <entry endPc="268437734" name="i" stackId="24" startPc="268437607"/>
+        <entry endPc="268437724" name="angel" stackId="25" startPc="268437607"/>
+        <entry endPc="268437724" name="_x" stackId="26" startPc="268437607"/>
+        <entry endPc="268437724" name="_y" stackId="27" startPc="268437607"/>
+        <entry arg="true" endPc="268437972" name="dc" stackId="1" startPc="268437892"/>
+        <entry arg="true" endPc="268437996" name="v" stackId="1" startPc="268437973"/>
+        <entry arg="true" endPc="268438174" name="dc" stackId="1" startPc="268438050"/>
+        <entry endPc="268438174" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268438061"/>
     </localVars>
     <deviceInfo deviceVersion="5b8447e9176f735631b8dd60792cd28538afc321" partNumber="006-B3990-00"/>
     <annotations>
@@ -342,7 +342,7 @@
         <functionEntry accessMode="public" name="onExitSleep" parent="readable_analog_watchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435729" name="drawHand" parent="readable_analog_watchfaceView" startPc="268435634">
+        <functionEntry accessMode="public" endPc="268435725" name="drawHand" parent="readable_analog_watchfaceView" startPc="268435634">
             <param id="centerPoint"/>
             <param id="angle"/>
             <param id="handLength"/>
@@ -355,35 +355,35 @@
         <functionEntry accessMode="public" name="onShow" parent="readable_analog_watchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435919" name="intersect" parent="readable_analog_watchfaceView" startPc="268435730">
+        <functionEntry accessMode="public" endPc="268435915" name="intersect" parent="readable_analog_watchfaceView" startPc="268435726">
             <param id="line1"/>
             <param id="line2"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436153" name="scaleBy" parent="readable_analog_watchfaceView" startPc="268435920">
+        <functionEntry accessMode="public" endPc="268436149" name="scaleBy" parent="readable_analog_watchfaceView" startPc="268435916">
             <param id="coords"/>
             <param id="scale"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436264" name="onLayout" parent="readable_analog_watchfaceView" startPc="268436154">
+        <functionEntry accessMode="public" endPc="268436260" name="onLayout" parent="readable_analog_watchfaceView" startPc="268436150">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436292" name="vecMul" parent="readable_analog_watchfaceView" startPc="268436265">
+        <functionEntry accessMode="public" endPc="268436288" name="vecMul" parent="readable_analog_watchfaceView" startPc="268436261">
             <param id="v"/>
             <param id="s"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436357" name="vecUnit" parent="readable_analog_watchfaceView" startPc="268436293">
+        <functionEntry accessMode="public" endPc="268436353" name="vecUnit" parent="readable_analog_watchfaceView" startPc="268436289">
             <param id="v"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436390" name="vecAdd" parent="readable_analog_watchfaceView" startPc="268436358">
+        <functionEntry accessMode="public" endPc="268436386" name="vecAdd" parent="readable_analog_watchfaceView" startPc="268436354">
             <param id="v1"/>
             <param id="v2"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436669" name="generateHandCoordinates" parent="readable_analog_watchfaceView" startPc="268436391">
+        <functionEntry accessMode="public" endPc="268436665" name="generateHandCoordinates" parent="readable_analog_watchfaceView" startPc="268436387">
             <param id="centerPoint"/>
             <param id="angle"/>
             <param id="handLength"/>
@@ -392,33 +392,33 @@
             <param id="tailWidth"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436702" name="vecSub" parent="readable_analog_watchfaceView" startPc="268436670">
+        <functionEntry accessMode="public" endPc="268436698" name="vecSub" parent="readable_analog_watchfaceView" startPc="268436666">
             <param id="v1"/>
             <param id="v2"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436856" name="drawCircleAtTheMiddle" parent="readable_analog_watchfaceView" startPc="268436703">
+        <functionEntry accessMode="public" endPc="268436852" name="drawCircleAtTheMiddle" parent="readable_analog_watchfaceView" startPc="268436699">
             <param id="targetDc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="readable_analog_watchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436871" name="initialize" parent="readable_analog_watchfaceView" startPc="268436857">
+        <functionEntry accessMode="public" endPc="268436867" name="initialize" parent="readable_analog_watchfaceView" startPc="268436853">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="readable_analog_watchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437895" name="drawWatchface" parent="readable_analog_watchfaceView" startPc="268436872">
+        <functionEntry accessMode="public" endPc="268437891" name="drawWatchface" parent="readable_analog_watchfaceView" startPc="268436868">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437976" name="onUpdate" parent="readable_analog_watchfaceView" startPc="268437896">
+        <functionEntry accessMode="public" endPc="268437972" name="onUpdate" parent="readable_analog_watchfaceView" startPc="268437892">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438000" name="aurthogonal" parent="readable_analog_watchfaceView" startPc="268437977">
+        <functionEntry accessMode="public" endPc="268437996" name="aurthogonal" parent="readable_analog_watchfaceView" startPc="268437973">
             <param id="v"/>
             <documentation/>
         </functionEntry>
@@ -434,21 +434,21 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438003" name="onStart" parent="readable_analog_watchfaceApp" startPc="268438001">
+        <functionEntry accessMode="public" endPc="268437999" name="onStart" parent="readable_analog_watchfaceApp" startPc="268437997">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438035" name="getInitialView" parent="readable_analog_watchfaceApp" startPc="268438004">
+        <functionEntry accessMode="public" endPc="268438031" name="getInitialView" parent="readable_analog_watchfaceApp" startPc="268438000">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438050" name="initialize" parent="readable_analog_watchfaceApp" startPc="268438036">
+        <functionEntry accessMode="public" endPc="268438046" name="initialize" parent="readable_analog_watchfaceApp" startPc="268438032">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438053" name="onStop" parent="readable_analog_watchfaceApp" startPc="268438051">
+        <functionEntry accessMode="public" endPc="268438049" name="onStop" parent="readable_analog_watchfaceApp" startPc="268438047">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438178" name="WatchFace" parent="Layouts" startPc="268438054">
+        <functionEntry accessMode="public" endPc="268438174" name="WatchFace" parent="Layouts" startPc="268438050">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
