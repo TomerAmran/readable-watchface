@@ -6,9 +6,10 @@ using Toybox.Time.Gregorian;
 
 class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var screenCenterPoint;
-        var font;
-        var prevMinute = -1;
-
+    var font;
+    var backgroundBuffer;
+    var dateBuffer;
+    var backgroundLoaded = false;
     function initialize() {
         WatchFace.initialize();
     }
@@ -18,6 +19,30 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
+
+        backgroundBuffer = Graphics.createBufferedBitmap({
+
+                :width=>dc.getWidth(),
+                :height=>dc.getHeight(),
+                :palette=> [
+                    Graphics.COLOR_DK_GRAY,
+                    Graphics.COLOR_LT_GRAY,
+                    Graphics.COLOR_BLACK,
+                    Graphics.COLOR_WHITE
+                ]
+            });
+
+        backgroundBuffer = backgroundBuffer.get();
+        
+        // Allocate a buffer tall enough to draw the date into the full width of the
+        // screen. This buffer is also used for blanking the second hand. This full
+        // color buffer is needed because anti-aliased fonts cannot be drawn into
+        // a buffer with a reduced color palette
+        dateBuffer = Graphics.createBufferedBitmap({
+            :width=>dc.getWidth(),
+            :height=>Graphics.getFontHeight(Graphics.FONT_MEDIUM)
+        });
+        dateBuffer=dateBuffer.get();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -37,6 +62,23 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     //     // Call the parent onUpdate function to redraw the layout
     //     View.onUpdate(dc);
     // }
+function onPartialUpdate(dc) {
+    System.println("onPartialUpdate");
+    drawWatchface(dc);
+}
+
+function drawBackGround(tragetDc){
+    // Fill the entire background with Black.
+    targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
+
+    // Draw the arbor in the center of the screen.
+    targetDc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_BLACK);
+    targetDc.fillCircle(width / 2, height / 2, 3);
+    targetDc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_BLACK);
+    targetDc.drawCircle(width / 2, height / 2, 7);
+
+}
 
 function drawWatchface(dc){
         System.println("drawWatchface");
@@ -54,15 +96,11 @@ function drawWatchface(dc){
         height = targetDc.getHeight();
         radius = width / 2;
 
-        // Fill the entire background with Black.
-        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-        targetDc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
-
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T+N", Graphics.TEXT_JUSTIFY_CENTER);
 
 
-        drawDateString( targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
+        // drawDateString( targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
         // Draw the battery percentage directly to the main screen.
         var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -80,7 +118,7 @@ function drawWatchface(dc){
             var x = (radius - 5);
             var y = 0;
             var tickWidth = 3;
-            var tickHeight = 10;
+            var tickHeight = 8;
             var points = [
                 [x - tickHeight/2, y - tickWidth/2],
                 [x - tickHeight/2, y + tickWidth/2],
@@ -104,7 +142,7 @@ function drawWatchface(dc){
         }
 
         // Draw the numbers.
-        var distance = radius * 0.8;
+        var distance = radius * 0.78;
         for (var i = 1 ; i<=12 ; i++){
             var angel = (Math.PI * 2 /12 * i) - (Math.PI/2);
             var _x = screenCenterPoint[0] + (distance * Math.cos(angel));
@@ -146,10 +184,11 @@ function drawWatchface(dc){
     }
     function onUpdate(dc) {
     System.println("onUpdate");
-    if (prevMinute != System.getClockTime().min) {
-        prevMinute = System.getClockTime().min;
+    // if (prevMinute != System.getClockTime().min) {
+    //     prevMinute = System.getClockTime().min;
+    //     drawWatchface(dc);
+    // }
         drawWatchface(dc);
-    }
     }
 
     function drawHand(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, targetDc) {
