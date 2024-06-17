@@ -12,6 +12,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var backgroundLoaded = false;
     var minuteHandCoords = [];
     var hourHandCoords = [];
+    var date;
 
     function initialize() {
         WatchFace.initialize();
@@ -23,7 +24,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
 
-        backgroundBuffer = Graphics.createBufferedBitmap({
+        backgroundBuffer = bufferedBitmapFactory({
                 :width=>dc.getWidth(),
                 :height=>dc.getHeight(),
                 :palette=> [
@@ -31,7 +32,8 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
                     Graphics.COLOR_LT_GRAY,
                     Graphics.COLOR_BLACK,
                     Graphics.COLOR_WHITE
-                ]
+                ],
+
             });
 
         backgroundBuffer = backgroundBuffer.get();
@@ -77,6 +79,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
 function drawBackGround(targetDc, radius, width, height){
     System.println("drawBackGround");
     // Fill the entire background with Black.
+    // log after 
     targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     targetDc.fillRectangle(0, 0, width, height);
 
@@ -341,10 +344,29 @@ function onUpdate(dc) {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void {
+        System.println("onExitSleep");
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
+        System.println("onEnterSleep");
+    }
+
+    //! Factory function to create buffered bitmap
+    function bufferedBitmapFactory(options as {
+                :width as Number,
+                :height as Number,
+                :palette as Array<ColorType>,
+                :colorDepth as Number,
+                :bitmapResource as WatchUi.BitmapResource
+            }) as BufferedBitmapReference or BufferedBitmap {
+        if (Graphics has :createBufferedBitmap) {
+            System.println("Using createBufferedBitmap");
+            return Graphics.createBufferedBitmap(options);
+        } else {
+            System.println("Using BufferedBitmap");
+            return new Graphics.BufferedBitmap(options);
+        }
     }
 
 }

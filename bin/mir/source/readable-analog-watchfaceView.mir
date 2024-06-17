@@ -48,7 +48,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
     }
     [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 21; ]
     function onLayout(dc as Dc) as Void {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_21_40_53_4_start:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_21_40_54_4_start:
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 22 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
@@ -84,8 +84,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
         putv self :font %tmp.31;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 26 8 ]
-        %tmp.32 = getm $.Toybox.Graphics;
-        %tmp.33 = getv function %tmp.32 :createBufferedBitmap;
+        %tmp.32 = self;
+        %tmp.33 = getv function %tmp.32 :bufferedBitmapFactory;
         %tmp.34 = newd 3;
         %tmp.36 = const :width;
         %tmp.37 = lgetv %dc;
@@ -121,12 +121,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.69 = aputv %tmp.68 %tmp.50 %tmp.67;
         %tmp.70 = invoke %tmp.32 %tmp.33(%tmp.69);
         putv self :backgroundBuffer %tmp.70;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 37 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 38 8 ]
         %tmp.72 = getv ? :backgroundBuffer;
         %tmp.73 = getv function %tmp.72 :get;
         %tmp.74 = invoke %tmp.72 %tmp.73();
         putv self :backgroundBuffer %tmp.74;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 43 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 44 8 ]
         %tmp.75 = getm $.Toybox.Graphics;
         %tmp.76 = getv function %tmp.75 :createBufferedBitmap;
         %tmp.77 = newd 2;
@@ -146,7 +146,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.93 = aputv %tmp.92 %tmp.86 %tmp.91;
         %tmp.94 = invoke %tmp.75 %tmp.76(%tmp.93);
         putv self :dateBuffer %tmp.94;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 47 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 48 8 ]
         %tmp.96 = getv ? :minuteHandCoords;
         %tmp.97 = getv function %tmp.96 :add;
         %tmp.98 = self;
@@ -165,7 +165,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.112 = 4;
         %tmp.113 = invoke %tmp.98 %tmp.99(%tmp.101, %tmp.102, %tmp.109, %tmp.110, %tmp.111, %tmp.112);
         invoke %tmp.96 %tmp.97(%tmp.113);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 48 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 49 8 ]
         %tmp.115 = getv ? :minuteHandCoords;
         %tmp.116 = getv function %tmp.115 :add;
         %tmp.117 = self;
@@ -188,7 +188,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.135 = -3;
         %tmp.136 = invoke %tmp.117 %tmp.118(%tmp.134, %tmp.135);
         invoke %tmp.115 %tmp.116(%tmp.136);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 49 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 50 8 ]
         %tmp.138 = getv ? :hourHandCoords;
         %tmp.139 = getv function %tmp.138 :add;
         %tmp.140 = self;
@@ -207,7 +207,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.154 = 7;
         %tmp.155 = invoke %tmp.140 %tmp.141(%tmp.143, %tmp.144, %tmp.151, %tmp.152, %tmp.153, %tmp.154);
         invoke %tmp.138 %tmp.139(%tmp.155);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 50 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 51 8 ]
         %tmp.157 = getv ? :hourHandCoords;
         %tmp.158 = getv function %tmp.157 :add;
         %tmp.159 = self;
@@ -230,40 +230,25 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.177 = -3;
         %tmp.178 = invoke %tmp.159 %tmp.160(%tmp.176, %tmp.177);
         invoke %tmp.157 %tmp.158(%tmp.178);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 52 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 53 8 ]
         %tmp.180 = getv ? :dateBuffer;
         %tmp.181 = getv function %tmp.180 :get;
         %tmp.182 = invoke %tmp.180 %tmp.181();
         putv self :dateBuffer %tmp.182;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_21_40_53_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_21_40_54_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 58; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 59; ]
     function onShow() as Void {
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 72; ]
-    function onPartialUpdate(dc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_72_29_75_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 73 4 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "onPartialUpdate";
-        invoke %tmp.1 %tmp.2(%tmp.3);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 74 4 ]
-        %tmp.4 = self;
-        %tmp.5 = getv function %tmp.4 :drawWatchface;
-        %tmp.7 = lgetv %dc;
-        invoke %tmp.4 %tmp.5(%tmp.7);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_72_29_75_0_stop:
-    }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 77; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 78; ]
     function drawBackGround(targetDc, radius, width, height) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 78 4 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 79 4 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "drawBackGround";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 80 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 81 4 ]
         %tmp.4 = lgetv %targetDc;
         %tmp.5 = getv function %tmp.4 :setColor;
         %tmp.6 = getm $.Toybox.Graphics;
@@ -271,7 +256,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.8 = getm $.Toybox.Graphics;
         %tmp.9 = getv %tmp.8 :COLOR_WHITE;
         invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 81 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 82 4 ]
         %tmp.10 = lgetv %targetDc;
         %tmp.11 = getv function %tmp.10 :fillRectangle;
         %tmp.12 = 0;
@@ -279,7 +264,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.15 = lgetv %width;
         %tmp.17 = lgetv %height;
         invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15, %tmp.17);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 83 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 84 4 ]
         %tmp.18 = self;
         %tmp.19 = getv function %tmp.18 :drawDateString;
         %tmp.21 = lgetv %targetDc;
@@ -294,29 +279,29 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.33 = 1;
         %tmp.34 = agetv %tmp.32 %tmp.33;
         invoke %tmp.18 %tmp.19(%tmp.21, %tmp.30, %tmp.34);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 86 4 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 87 4 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_stop" ]
         %distance.1 = local;
         %tmp.36 = lgetv %radius;
         %tmp.37 = 0.78;
         %tmp.38 = mul %tmp.36 %tmp.37;
         lputv %distance.1 %tmp.38;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 87 4 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 88 4 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_end" ]
         %i.2 = local;
         %tmp.39 = 1;
         lputv %i.2 %tmp.39;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_test:
         %tmp.41 = lgetv %i.2;
         %tmp.42 = 12;
         %tmp.43 = lte %tmp.41 %tmp.42;
-        bf %tmp.43 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 88 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_stop" ]
+        bf %tmp.43 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 89 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_stop" ]
         %angel.3 = local;
         %tmp.45 = getv ? :Math;
         %tmp.46 = getv %tmp.45 :PI;
@@ -332,8 +317,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.58 = div %tmp.56 %tmp.57;
         %tmp.59 = sub %tmp.53 %tmp.58;
         lputv %angel.3 %tmp.59;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 89 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 90 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_stop" ]
         %_x.4 = local;
         %tmp.61 = getv ? :screenCenterPoint;
         %tmp.62 = 0;
@@ -346,8 +331,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.72 = mul %tmp.65 %tmp.71;
         %tmp.73 = add %tmp.63 %tmp.72;
         lputv %_x.4 %tmp.73;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 90 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 91 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_stop" ]
         %_y.5 = local;
         %tmp.75 = getv ? :screenCenterPoint;
         %tmp.76 = 1;
@@ -360,7 +345,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.86 = mul %tmp.79 %tmp.85;
         %tmp.87 = add %tmp.77 %tmp.86;
         lputv %_y.5 %tmp.87;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 91 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 92 8 ]
         %tmp.88 = lgetv %targetDc;
         %tmp.89 = getv function %tmp.88 :setColor;
         %tmp.90 = getm $.Toybox.Graphics;
@@ -368,7 +353,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.92 = getm $.Toybox.Graphics;
         %tmp.93 = getv %tmp.92 :COLOR_BLACK;
         invoke %tmp.88 %tmp.89(%tmp.91, %tmp.93);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 92 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 93 8 ]
         %tmp.94 = lgetv %targetDc;
         %tmp.95 = getv function %tmp.94 :drawText;
         %tmp.97 = lgetv %_x.4;
@@ -383,16 +368,16 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_CENTER;
         %tmp.109 = bitor %tmp.106 %tmp.108;
         invoke %tmp.94 %tmp.95(%tmp.97, %tmp.99, %tmp.101, %tmp.104, %tmp.109);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_33_94_4_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 87 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_33_95_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 88 ]
         %tmp.112 = lgetv %i.2;
         %tmp.113 = add %tmp.112 1;
         lputv %i.2 %tmp.113;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_87_4_94_4_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 97 4 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_stop" ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_88_4_95_4_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 98 4 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_stop" ]
         %tickAngle.6 = local;
         %tmp.115 = getv ? :Math;
         %tmp.116 = getv %tmp.115 :PI;
@@ -401,44 +386,44 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.119 = 60;
         %tmp.120 = div %tmp.118 %tmp.119;
         lputv %tickAngle.6 %tmp.120;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 98 4 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 99 4 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_end" ]
         %i.7 = local;
         %tmp.121 = 1;
         lputv %i.7 %tmp.121;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_test:
         %tmp.123 = lgetv %i.7;
         %tmp.124 = 60;
         %tmp.125 = lte %tmp.123 %tmp.124;
-        bf %tmp.125 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 99 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+        bf %tmp.125 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 100 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %x.8 = local;
         %tmp.127 = lgetv %radius;
         %tmp.128 = 5;
         %tmp.129 = sub %tmp.127 %tmp.128;
         lputv %x.8 %tmp.129;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 100 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 101 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %y.9 = local;
         %tmp.130 = 0;
         lputv %y.9 %tmp.130;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 101 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 102 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %tickWidth.10 = local;
         %tmp.131 = 3;
         lputv %tickWidth.10 %tmp.131;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 102 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 103 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %tickHeight.11 = local;
         %tmp.132 = 8;
         lputv %tickHeight.11 %tmp.132;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 103 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 104 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %points.12 = local;
         %tmp.133 = newa 4;
         %tmp.134 = newa 2;
@@ -510,30 +495,30 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.216 = dup %tmp.196;
         %tmp.217 = aputv %tmp.216 3 %tmp.215;
         lputv %points.12 %tmp.217;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 109 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 110 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %angel.13 = local;
         %tmp.219 = lgetv %tickAngle.6;
         %tmp.221 = lgetv %i.7;
         %tmp.222 = mul %tmp.219 %tmp.221;
         lputv %angel.13 %tmp.222;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 110 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 111 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %sin.14 = local;
         %tmp.224 = getv ? :Math;
         %tmp.225 = getv function %tmp.224 :sin;
         %tmp.227 = lgetv %angel.13;
         %tmp.228 = invoke %tmp.224 %tmp.225(%tmp.227);
         lputv %sin.14 %tmp.228;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 111 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 112 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop" ]
         %cos.15 = local;
         %tmp.230 = getv ? :Math;
         %tmp.231 = getv function %tmp.230 :cos;
         %tmp.233 = lgetv %angel.13;
         %tmp.234 = invoke %tmp.230 %tmp.231(%tmp.233);
         lputv %cos.15 %tmp.234;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 112 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 113 8 ]
         %tmp.235 = lgetv %targetDc;
         %tmp.236 = getv function %tmp.235 :setColor;
         %tmp.237 = getm $.Toybox.Graphics;
@@ -541,23 +526,23 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.239 = getm $.Toybox.Graphics;
         %tmp.240 = getv %tmp.239 :COLOR_BLACK;
         invoke %tmp.235 %tmp.236(%tmp.238, %tmp.240);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 114 8 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 115 8 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_end" ]
         %j.16 = local;
         %tmp.241 = 0;
         lputv %j.16 %tmp.241;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_test:
         %tmp.243 = lgetv %j.16;
         %tmp.244 = lgetv %points.12;
         %tmp.245 = getv function %tmp.244 :size;
         %tmp.246 = invoke %tmp.244 %tmp.245();
         %tmp.247 = lt %tmp.243 %tmp.246;
-        bf %tmp.247 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_51_121_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 115 12 ]
+        bf %tmp.247 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_51_122_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 116 12 ]
         %tmp.248 = lgetv %points.12;
         %tmp.249 = newa 2;
         %tmp.251 = getv ? :screenCenterPoint;
@@ -604,101 +589,101 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.305 = aputv %tmp.304 1 %tmp.303;
         %tmp.307 = lgetv %j.16;
         aputv %tmp.248 %tmp.307 %tmp.305;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_51_121_8_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 114 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_51_122_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 115 ]
         %tmp.308 = lgetv %j.16;
         %tmp.309 = 1;
         %tmp.310 = add %tmp.308 %tmp.309;
         lputv %j.16 %tmp.310;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_114_8_121_8_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 122 8 ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_115_8_122_8_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 123 8 ]
         %tmp.311 = lgetv %targetDc;
         %tmp.312 = getv function %tmp.311 :fillPolygon;
         %tmp.314 = lgetv %points.12;
         invoke %tmp.311 %tmp.312(%tmp.314);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_33_123_4_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 98 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_33_124_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 99 ]
         %tmp.317 = lgetv %i.7;
         %tmp.318 = add %tmp.317 1;
         lputv %i.7 %tmp.318;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_98_4_123_4_for_end:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_77_56_124_0_stop:
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_99_4_124_4_for_end:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_78_56_125_0_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 126; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 127; ]
     function drawWatchface(dc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 127 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 128 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "drawWatchface";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 128 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %width.1 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 129 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %height.2 = local;
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %width.1 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 130 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %radius.3 = local;
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %height.2 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 131 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %radius.3 = local;
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 132 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
         %screenWidth.4 = local;
         %tmp.4 = lgetv %dc;
         %tmp.5 = getv function %tmp.4 :getWidth;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %screenWidth.4 %tmp.6;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 132 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 133 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
         %clockTime.5 = local;
         %tmp.7 = getm $.Toybox.System;
         %tmp.8 = getv function %tmp.7 :getClockTime;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         lputv %clockTime.5 %tmp.9;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 133 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %minuteHandAngle.6 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 134 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %hourHandAngle.7 = local;
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %minuteHandAngle.6 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 135 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
-        %secondHand.8 = local;
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %hourHandAngle.7 = local;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 136 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
+        %secondHand.8 = local;
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 137 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
         %targetDc.9 = local;
         %tmp.11 = lgetv %dc;
         lputv %targetDc.9 %tmp.11;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 138 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 139 8 ]
         %tmp.12 = lgetv %targetDc.9;
         %tmp.13 = getv function %tmp.12 :getWidth;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         lputv %width.1 %tmp.14;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 139 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 140 8 ]
         %tmp.15 = lgetv %targetDc.9;
         %tmp.16 = getv function %tmp.15 :getHeight;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         lputv %height.2 %tmp.17;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 140 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 141 8 ]
         %tmp.19 = lgetv %width.1;
         %tmp.20 = 2;
         %tmp.21 = div %tmp.19 %tmp.20;
         lputv %radius.3 %tmp.21;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 142 8 ]
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_8_145_8_if_stmt:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 143 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_8_146_8_if_stmt:
         %tmp.23 = getv ? :backgroundLoaded;
         %tmp.24 = not %tmp.23;
-        bf %tmp.24 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_8_145_8_if_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_8_145_8_if_true:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_31_145_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 143 16 ]
+        bf %tmp.24 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_8_146_8_if_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_8_146_8_if_true:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_31_146_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 144 16 ]
         %tmp.25 = true;
         putv self :backgroundLoaded %tmp.25;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 144 16 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 145 16 ]
         %tmp.26 = self;
         %tmp.27 = getv function %tmp.26 :drawBackGround;
         %tmp.29 = getv ? :backgroundBuffer;
@@ -708,18 +693,18 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.35 = lgetv %width.1;
         %tmp.37 = lgetv %height.2;
         invoke %tmp.26 %tmp.27(%tmp.31, %tmp.33, %tmp.35, %tmp.37);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_31_145_8_stop:
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_8_145_8_if_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_142_8_145_8_if_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 147 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_31_146_8_stop:
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_8_146_8_if_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_143_8_146_8_if_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 148 8 ]
         %tmp.38 = lgetv %dc;
         %tmp.39 = getv function %tmp.38 :drawBitmap;
         %tmp.40 = 0;
         %tmp.41 = 0;
         %tmp.43 = getv ? :backgroundBuffer;
         invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.43);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 155 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 156 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop" ]
         %dataString.10 = local;
         %tmp.44 = getm $.Toybox.System;
         %tmp.45 = getv function %tmp.44 :getSystemStats;
@@ -734,7 +719,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.54 = "%";
         %tmp.55 = add %tmp.53 %tmp.54;
         lputv %dataString.10 %tmp.55;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 156 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 157 8 ]
         %tmp.56 = lgetv %dc;
         %tmp.57 = getv function %tmp.56 :setColor;
         %tmp.58 = getm $.Toybox.Graphics;
@@ -742,7 +727,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.60 = getm $.Toybox.Graphics;
         %tmp.61 = getv %tmp.60 :COLOR_TRANSPARENT;
         invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 159 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 160 8 ]
         %tmp.62 = lgetv %dc;
         %tmp.63 = getv function %tmp.62 :drawText;
         %tmp.65 = getv ? :screenCenterPoint;
@@ -761,7 +746,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.81 = getm $.Toybox.Graphics;
         %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.62 %tmp.63(%tmp.67, %tmp.76, %tmp.78, %tmp.80, %tmp.82);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 162 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 163 8 ]
         %tmp.83 = lgetv %clockTime.5;
         %tmp.84 = getv %tmp.83 :hour;
         %tmp.85 = 12;
@@ -772,14 +757,14 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.90 = getv %tmp.89 :min;
         %tmp.91 = add %tmp.88 %tmp.90;
         lputv %hourHandAngle.7 %tmp.91;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 163 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 164 8 ]
         %tmp.93 = lgetv %hourHandAngle.7;
         %tmp.94 = 12;
         %tmp.95 = 60.0;
         %tmp.96 = mul %tmp.94 %tmp.95;
         %tmp.97 = div %tmp.93 %tmp.96;
         lputv %hourHandAngle.7 %tmp.97;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 164 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 165 8 ]
         %tmp.99 = lgetv %hourHandAngle.7;
         %tmp.101 = getv ? :Math;
         %tmp.102 = getv %tmp.101 :PI;
@@ -787,7 +772,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.104 = 2;
         %tmp.105 = mul %tmp.103 %tmp.104;
         lputv %hourHandAngle.7 %tmp.105;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 165 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 166 8 ]
         %tmp.106 = self;
         %tmp.107 = getv function %tmp.106 :drawHand2;
         %tmp.109 = getv ? :screenCenterPoint;
@@ -800,7 +785,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.119 = agetv %tmp.117 %tmp.118;
         %tmp.121 = lgetv %targetDc.9;
         invoke %tmp.106 %tmp.107(%tmp.109, %tmp.111, %tmp.115, %tmp.119, %tmp.121);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 168 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 169 8 ]
         %tmp.122 = lgetv %clockTime.5;
         %tmp.123 = getv %tmp.122 :min;
         %tmp.124 = 60.0;
@@ -811,7 +796,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.130 = 2;
         %tmp.131 = mul %tmp.129 %tmp.130;
         lputv %minuteHandAngle.6 %tmp.131;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 169 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 170 8 ]
         %tmp.132 = self;
         %tmp.133 = getv function %tmp.132 :drawHand2;
         %tmp.135 = getv ? :screenCenterPoint;
@@ -824,38 +809,38 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.145 = agetv %tmp.143 %tmp.144;
         %tmp.147 = lgetv %targetDc.9;
         invoke %tmp.132 %tmp.133(%tmp.135, %tmp.137, %tmp.141, %tmp.145, %tmp.147);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 172 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 173 8 ]
         %tmp.148 = self;
         %tmp.149 = getv function %tmp.148 :drawCircleAtTheMiddle;
         %tmp.151 = lgetv %targetDc.9;
         invoke %tmp.148 %tmp.149(%tmp.151);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_126_26_173_0_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_127_26_174_0_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 175; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 176; ]
     function drawCircleAtTheMiddle(targetDc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 176 4 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 177 4 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_stop" ]
         %width.1 = local;
         %tmp.1 = lgetv %targetDc;
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %width.1 %tmp.3;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 177 4 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 178 4 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_stop" ]
         %height.2 = local;
         %tmp.4 = lgetv %targetDc;
         %tmp.5 = getv function %tmp.4 :getHeight;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %height.2 %tmp.6;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 178 4 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 179 4 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_stop" ]
         %radius.3 = local;
         %tmp.8 = lgetv %width.1;
         %tmp.9 = 2;
         %tmp.10 = div %tmp.8 %tmp.9;
         lputv %radius.3 %tmp.10;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 179 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 180 4 ]
         %tmp.11 = lgetv %targetDc;
         %tmp.12 = getv function %tmp.11 :setColor;
         %tmp.13 = getm $.Toybox.Graphics;
@@ -863,7 +848,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.15 = getm $.Toybox.Graphics;
         %tmp.16 = getv %tmp.15 :COLOR_BLACK;
         invoke %tmp.11 %tmp.12(%tmp.14, %tmp.16);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 180 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 181 4 ]
         %tmp.17 = lgetv %targetDc;
         %tmp.18 = getv function %tmp.17 :fillCircle;
         %tmp.20 = getv ? :screenCenterPoint;
@@ -874,7 +859,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.26 = agetv %tmp.24 %tmp.25;
         %tmp.27 = 10;
         invoke %tmp.17 %tmp.18(%tmp.22, %tmp.26, %tmp.27);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 181 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 182 4 ]
         %tmp.28 = lgetv %targetDc;
         %tmp.29 = getv function %tmp.28 :setColor;
         %tmp.30 = getm $.Toybox.Graphics;
@@ -882,7 +867,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.32 = getm $.Toybox.Graphics;
         %tmp.33 = getv %tmp.32 :COLOR_BLACK;
         invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 182 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 183 4 ]
         %tmp.34 = lgetv %targetDc;
         %tmp.35 = getv function %tmp.34 :fillCircle;
         %tmp.37 = getv ? :screenCenterPoint;
@@ -893,7 +878,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.43 = agetv %tmp.41 %tmp.42;
         %tmp.44 = 7;
         invoke %tmp.34 %tmp.35(%tmp.39, %tmp.43, %tmp.44);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 183 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 184 4 ]
         %tmp.45 = lgetv %targetDc;
         %tmp.46 = getv function %tmp.45 :setColor;
         %tmp.47 = getm $.Toybox.Graphics;
@@ -901,7 +886,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.49 = getm $.Toybox.Graphics;
         %tmp.50 = getv %tmp.49 :COLOR_BLACK;
         invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 184 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 185 4 ]
         %tmp.51 = lgetv %targetDc;
         %tmp.52 = getv function %tmp.51 :fillCircle;
         %tmp.54 = getv ? :screenCenterPoint;
@@ -912,28 +897,28 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.60 = agetv %tmp.58 %tmp.59;
         %tmp.61 = 2;
         invoke %tmp.51 %tmp.52(%tmp.56, %tmp.60, %tmp.61);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_175_40_186_0_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_176_40_187_0_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 187; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 188; ]
     function onUpdate(dc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_187_22_194_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 188 4 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_188_22_195_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 189 4 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "onUpdate";
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 193 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 194 4 ]
         %tmp.4 = self;
         %tmp.5 = getv function %tmp.4 :drawWatchface;
         %tmp.7 = lgetv %dc;
         invoke %tmp.4 %tmp.5(%tmp.7);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_187_22_194_0_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_188_22_195_0_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 196; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 197; ]
     function drawHand(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, targetDc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 197 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 198 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_stop" ]
         %coords.1 = local;
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :generateHandCoordinates;
@@ -945,8 +930,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.14 = lgetv %tailWidth;
         %tmp.15 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8, %tmp.10, %tmp.12, %tmp.14);
         lputv %coords.1 %tmp.15;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 198 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 199 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_stop" ]
         %scaledCords.2 = local;
         %tmp.16 = self;
         %tmp.17 = getv function %tmp.16 :scaleBy;
@@ -954,7 +939,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.20 = -3;
         %tmp.21 = invoke %tmp.16 %tmp.17(%tmp.19, %tmp.20);
         lputv %scaledCords.2 %tmp.21;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 199 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 200 8 ]
         %tmp.22 = lgetv %targetDc;
         %tmp.23 = getv function %tmp.22 :setColor;
         %tmp.24 = getm $.Toybox.Graphics;
@@ -962,12 +947,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.26 = getm $.Toybox.Graphics;
         %tmp.27 = getv %tmp.26 :COLOR_BLACK;
         invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 200 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 201 8 ]
         %tmp.28 = lgetv %targetDc;
         %tmp.29 = getv function %tmp.28 :fillPolygon;
         %tmp.31 = lgetv %scaledCords.2;
         invoke %tmp.28 %tmp.29(%tmp.31);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 201 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 202 8 ]
         %tmp.32 = lgetv %targetDc;
         %tmp.33 = getv function %tmp.32 :setColor;
         %tmp.34 = getm $.Toybox.Graphics;
@@ -975,18 +960,18 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.36 = getm $.Toybox.Graphics;
         %tmp.37 = getv %tmp.36 :COLOR_BLACK;
         invoke %tmp.32 %tmp.33(%tmp.35, %tmp.37);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 202 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 203 8 ]
         %tmp.38 = lgetv %targetDc;
         %tmp.39 = getv function %tmp.38 :fillPolygon;
         %tmp.41 = lgetv %coords.1;
         invoke %tmp.38 %tmp.39(%tmp.41);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_196_98_203_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_197_98_204_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 205; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 206; ]
     function drawHand2(centerPoint, angle, cords, bigCords, targetDc) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 206 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 207 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_stop" ]
         %coords.1 = local;
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :rotate;
@@ -995,8 +980,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.8 = lgetv %centerPoint;
         %tmp.9 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
         lputv %coords.1 %tmp.9;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 207 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 208 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_stop" ]
         %bigCoords.2 = local;
         %tmp.10 = self;
         %tmp.11 = getv function %tmp.10 :rotate;
@@ -1005,7 +990,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.17 = lgetv %centerPoint;
         %tmp.18 = invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15, %tmp.17);
         lputv %bigCoords.2 %tmp.18;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 209 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 210 8 ]
         %tmp.19 = lgetv %targetDc;
         %tmp.20 = getv function %tmp.19 :setColor;
         %tmp.21 = getm $.Toybox.Graphics;
@@ -1013,12 +998,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.23 = getm $.Toybox.Graphics;
         %tmp.24 = getv %tmp.23 :COLOR_BLACK;
         invoke %tmp.19 %tmp.20(%tmp.22, %tmp.24);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 210 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 211 8 ]
         %tmp.25 = lgetv %targetDc;
         %tmp.26 = getv function %tmp.25 :fillPolygon;
         %tmp.28 = lgetv %bigCoords.2;
         invoke %tmp.25 %tmp.26(%tmp.28);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 211 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 212 8 ]
         %tmp.29 = lgetv %targetDc;
         %tmp.30 = getv function %tmp.29 :setColor;
         %tmp.31 = getm $.Toybox.Graphics;
@@ -1026,18 +1011,18 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.33 = getm $.Toybox.Graphics;
         %tmp.34 = getv %tmp.33 :COLOR_BLACK;
         invoke %tmp.29 %tmp.30(%tmp.32, %tmp.34);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 212 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 213 8 ]
         %tmp.35 = lgetv %targetDc;
         %tmp.36 = getv function %tmp.35 :fillPolygon;
         %tmp.38 = lgetv %coords.1;
         invoke %tmp.35 %tmp.36(%tmp.38);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_205_69_213_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_206_69_214_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 218; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 219; ]
     function vecUnit(v) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_218_24_221_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 219 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_218_24_221_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_218_24_221_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_219_24_222_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 220 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_219_24_222_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_219_24_222_4_stop" ]
         %len.1 = local;
         %tmp.2 = getv ? :Math;
         %tmp.3 = getv function %tmp.2 :sqrt;
@@ -1058,7 +1043,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.22 = add %tmp.12 %tmp.21;
         %tmp.23 = invoke %tmp.2 %tmp.3(%tmp.22);
         lputv %len.1 %tmp.23;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 220 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 221 8 ]
         %tmp.24 = newa 2;
         %tmp.26 = lgetv %v;
         %tmp.27 = 0;
@@ -1075,12 +1060,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.41 = dup %tmp.33;
         %tmp.42 = aputv %tmp.41 1 %tmp.40;
         ret %tmp.42;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_218_24_221_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_219_24_222_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 223; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 224; ]
     function vecMul(v, s) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_223_26_225_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 224 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_224_26_226_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 225 8 ]
         %tmp.1 = newa 2;
         %tmp.3 = lgetv %v;
         %tmp.4 = 0;
@@ -1097,12 +1082,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.18 = dup %tmp.10;
         %tmp.19 = aputv %tmp.18 1 %tmp.17;
         ret %tmp.19;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_223_26_225_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_224_26_226_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 227; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 228; ]
     function aurthogonal(v) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_227_28_229_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 228 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_228_28_230_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 229 8 ]
         %tmp.1 = newa 2;
         %tmp.3 = lgetv %v;
         %tmp.4 = 1;
@@ -1116,12 +1101,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.13 = dup %tmp.8;
         %tmp.14 = aputv %tmp.13 1 %tmp.12;
         ret %tmp.14;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_227_28_229_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_228_28_230_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 231; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 232; ]
     function vecSub(v1, v2) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_231_28_233_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 232 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_232_28_234_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 233 8 ]
         %tmp.1 = newa 2;
         %tmp.3 = lgetv %v1;
         %tmp.4 = 0;
@@ -1142,12 +1127,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.22 = dup %tmp.12;
         %tmp.23 = aputv %tmp.22 1 %tmp.21;
         ret %tmp.23;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_231_28_233_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_232_28_234_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 235; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 236; ]
     function vecAdd(v1, v2) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_235_28_237_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 236 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_236_28_238_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 237 8 ]
         %tmp.1 = newa 2;
         %tmp.3 = lgetv %v1;
         %tmp.4 = 0;
@@ -1168,13 +1153,13 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.22 = dup %tmp.12;
         %tmp.23 = aputv %tmp.22 1 %tmp.21;
         ret %tmp.23;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_235_28_237_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_236_28_238_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 239; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 240; ]
     function intersect(line1, line2) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 240 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 241 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %a1.1 = local;
         %tmp.2 = lgetv %line1;
         %tmp.3 = 1;
@@ -1188,8 +1173,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.12 = agetv %tmp.10 %tmp.11;
         %tmp.13 = sub %tmp.6 %tmp.12;
         lputv %a1.1 %tmp.13;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 241 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 242 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %b1.2 = local;
         %tmp.15 = lgetv %line2;
         %tmp.16 = 0;
@@ -1203,8 +1188,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.25 = agetv %tmp.23 %tmp.24;
         %tmp.26 = sub %tmp.19 %tmp.25;
         lputv %b1.2 %tmp.26;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 242 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 243 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %c1.3 = local;
         %tmp.28 = lgetv %line2;
         %tmp.29 = 0;
@@ -1218,8 +1203,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.38 = agetv %tmp.36 %tmp.37;
         %tmp.39 = sub %tmp.32 %tmp.38;
         lputv %c1.3 %tmp.39;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 244 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 245 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %a2.4 = local;
         %tmp.41 = lgetv %line1;
         %tmp.42 = 1;
@@ -1233,8 +1218,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.51 = agetv %tmp.49 %tmp.50;
         %tmp.52 = sub %tmp.45 %tmp.51;
         lputv %a2.4 %tmp.52;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 245 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 246 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %b2.5 = local;
         %tmp.54 = lgetv %line2;
         %tmp.55 = 0;
@@ -1248,8 +1233,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.64 = agetv %tmp.62 %tmp.63;
         %tmp.65 = sub %tmp.58 %tmp.64;
         lputv %b2.5 %tmp.65;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 246 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 247 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %c2.6 = local;
         %tmp.67 = lgetv %line2;
         %tmp.68 = 0;
@@ -1263,8 +1248,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.77 = agetv %tmp.75 %tmp.76;
         %tmp.78 = sub %tmp.71 %tmp.77;
         lputv %c2.6 %tmp.78;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 248 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 249 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop" ]
         %t.7 = local;
         %tmp.80 = lgetv %b1.2;
         %tmp.82 = lgetv %c2.6;
@@ -1282,7 +1267,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.100 = sub %tmp.94 %tmp.99;
         %tmp.101 = div %tmp.89 %tmp.100;
         lputv %t.7 %tmp.101;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 250 4 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 251 4 ]
         %tmp.102 = newa 2;
         %tmp.104 = lgetv %line1;
         %tmp.105 = 0;
@@ -1327,13 +1312,13 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.151 = dup %tmp.127;
         %tmp.152 = aputv %tmp.151 1 %tmp.150;
         ret %tmp.152;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_239_37_252_0_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_240_37_253_0_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 255; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 256; ]
     function generateHandCoordinates(centerPoint, angle, handLength, tailLength, headWidth, tailWidth) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 257 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 258 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop" ]
         %coords.1 = local;
         %tmp.1 = newa 5;
         %tmp.2 = newa 2;
@@ -1397,51 +1382,51 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.69 = dup %tmp.57;
         %tmp.70 = aputv %tmp.69 4 %tmp.68;
         lputv %coords.1 %tmp.70;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 264 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 265 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop" ]
         %len.2 = local;
         %tmp.71 = lgetv %coords.1;
         %tmp.72 = getv function %tmp.71 :size;
         %tmp.73 = invoke %tmp.71 %tmp.72();
         lputv %len.2 %tmp.73;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 265 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 266 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop" ]
         %result.3 = local;
         %tmp.76 = lgetv %len.2;
         %tmp.74 = newa %tmp.76;
         lputv %result.3 %tmp.74;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 266 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 267 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop" ]
         %cos.4 = local;
         %tmp.78 = getv ? :Math;
         %tmp.79 = getv function %tmp.78 :cos;
         %tmp.81 = lgetv %angle;
         %tmp.82 = invoke %tmp.78 %tmp.79(%tmp.81);
         lputv %cos.4 %tmp.82;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 267 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 268 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop" ]
         %sin.5 = local;
         %tmp.84 = getv ? :Math;
         %tmp.85 = getv function %tmp.84 :sin;
         %tmp.87 = lgetv %angle;
         %tmp.88 = invoke %tmp.84 %tmp.85(%tmp.87);
         lputv %sin.5 %tmp.88;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 270 8 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 271 8 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_end" ]
         %i.6 = local;
         %tmp.89 = 0;
         lputv %i.6 %tmp.89;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_test:
         %tmp.91 = lgetv %i.6;
         %tmp.93 = lgetv %len.2;
         %tmp.94 = lt %tmp.91 %tmp.93;
-        bf %tmp.94 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 271 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_stop" ]
+        bf %tmp.94 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 272 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_stop" ]
         %x.7 = local;
         %tmp.96 = lgetv %coords.1;
         %tmp.98 = lgetv %i.6;
@@ -1459,8 +1444,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.114 = mul %tmp.111 %tmp.113;
         %tmp.115 = sub %tmp.104 %tmp.114;
         lputv %x.7 %tmp.115;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 272 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 273 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_stop" ]
         %y.8 = local;
         %tmp.117 = lgetv %coords.1;
         %tmp.119 = lgetv %i.6;
@@ -1478,7 +1463,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.135 = mul %tmp.132 %tmp.134;
         %tmp.136 = add %tmp.125 %tmp.135;
         lputv %y.8 %tmp.136;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 274 12 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 275 12 ]
         %tmp.137 = lgetv %result.3;
         %tmp.138 = newa 2;
         %tmp.140 = lgetv %centerPoint;
@@ -1497,68 +1482,68 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.156 = aputv %tmp.155 1 %tmp.154;
         %tmp.158 = lgetv %i.6;
         aputv %tmp.137 %tmp.158 %tmp.156;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_41_275_8_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 270 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_41_276_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 271 ]
         %tmp.159 = lgetv %i.6;
         %tmp.160 = 1;
         %tmp.161 = add %tmp.159 %tmp.160;
         lputv %i.6 %tmp.161;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_270_8_275_8_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 277 8 ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_271_8_276_8_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 278 8 ]
         %tmp.163 = lgetv %result.3;
         ret %tmp.163;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_255_103_278_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_256_103_279_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 280; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 281; ]
     function rotate(coords, angle, centerPoint) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 281 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 282 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_stop" ]
         %len.1 = local;
         %tmp.1 = lgetv %coords;
         %tmp.2 = getv function %tmp.1 :size;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %len.1 %tmp.3;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 282 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 283 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_stop" ]
         %result.2 = local;
         %tmp.6 = lgetv %len.1;
         %tmp.4 = newa %tmp.6;
         lputv %result.2 %tmp.4;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 283 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 284 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_stop" ]
         %cos.3 = local;
         %tmp.8 = getv ? :Math;
         %tmp.9 = getv function %tmp.8 :cos;
         %tmp.11 = lgetv %angle;
         %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
         lputv %cos.3 %tmp.12;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 284 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 285 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_stop" ]
         %sin.4 = local;
         %tmp.14 = getv ? :Math;
         %tmp.15 = getv function %tmp.14 :sin;
         %tmp.17 = lgetv %angle;
         %tmp.18 = invoke %tmp.14 %tmp.15(%tmp.17);
         lputv %sin.4 %tmp.18;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 287 8 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 288 8 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_end" ]
         %i.5 = local;
         %tmp.19 = 0;
         lputv %i.5 %tmp.19;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_test:
         %tmp.21 = lgetv %i.5;
         %tmp.23 = lgetv %len.1;
         %tmp.24 = lt %tmp.21 %tmp.23;
-        bf %tmp.24 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 288 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_stop" ]
+        bf %tmp.24 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 289 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_stop" ]
         %x.6 = local;
         %tmp.26 = lgetv %coords;
         %tmp.28 = lgetv %i.5;
@@ -1576,8 +1561,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.44 = mul %tmp.41 %tmp.43;
         %tmp.45 = sub %tmp.34 %tmp.44;
         lputv %x.6 %tmp.45;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 289 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 290 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_stop" ]
         %y.7 = local;
         %tmp.47 = lgetv %coords;
         %tmp.49 = lgetv %i.5;
@@ -1595,7 +1580,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.65 = mul %tmp.62 %tmp.64;
         %tmp.66 = add %tmp.55 %tmp.65;
         lputv %y.7 %tmp.66;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 291 12 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 292 12 ]
         %tmp.67 = lgetv %result.2;
         %tmp.68 = newa 2;
         %tmp.70 = lgetv %centerPoint;
@@ -1614,25 +1599,25 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.86 = aputv %tmp.85 1 %tmp.84;
         %tmp.88 = lgetv %i.5;
         aputv %tmp.67 %tmp.88 %tmp.86;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_41_292_8_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 287 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_41_293_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 288 ]
         %tmp.89 = lgetv %i.5;
         %tmp.90 = 1;
         %tmp.91 = add %tmp.89 %tmp.90;
         lputv %i.5 %tmp.91;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_287_8_292_8_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 293 8 ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_288_8_293_8_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 294 8 ]
         %tmp.93 = lgetv %result.2;
         ret %tmp.93;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_280_47_294_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_281_47_295_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 296; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 297; ]
     function generateHandCoordinatesWithoutRotation(centerPoint, angle, handLength, tailLength, headWidth, tailWidth) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_296_118_306_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 298 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_296_118_306_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_296_118_306_8_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_297_118_307_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 299 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_297_118_307_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_297_118_307_8_stop" ]
         %coords.1 = local;
         %tmp.1 = newa 5;
         %tmp.2 = newa 2;
@@ -1696,47 +1681,47 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.69 = dup %tmp.57;
         %tmp.70 = aputv %tmp.69 4 %tmp.68;
         lputv %coords.1 %tmp.70;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 305 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 306 8 ]
         %tmp.72 = lgetv %coords.1;
         ret %tmp.72;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_296_118_306_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_297_118_307_8_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 308; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 309; ]
     function scaleBy(coords, scale) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 309 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 310 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_stop" ]
         %newLines.1 = local;
         %tmp.2 = lgetv %coords;
         %tmp.3 = getv function %tmp.2 :size;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         %tmp.1 = newa %tmp.4;
         lputv %newLines.1 %tmp.1;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 310 8 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 311 8 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_end" ]
         %i.2 = local;
         %tmp.5 = 0;
         lputv %i.2 %tmp.5;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_test:
         %tmp.7 = lgetv %i.2;
         %tmp.8 = lgetv %coords;
         %tmp.9 = getv function %tmp.8 :size;
         %tmp.10 = invoke %tmp.8 %tmp.9();
         %tmp.11 = lt %tmp.7 %tmp.10;
-        bf %tmp.11 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 311 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop" ]
+        bf %tmp.11 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 312 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop" ]
         %p1.3 = local;
         %tmp.13 = lgetv %coords;
         %tmp.15 = lgetv %i.2;
         %tmp.16 = agetv %tmp.13 %tmp.15;
         lputv %p1.3 %tmp.16;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 312 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 313 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop" ]
         %p2.4 = local;
         %tmp.18 = lgetv %coords;
         %tmp.20 = lgetv %i.2;
@@ -1748,8 +1733,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.26 = mod %tmp.22 %tmp.25;
         %tmp.27 = agetv %tmp.18 %tmp.26;
         lputv %p2.4 %tmp.27;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 313 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 314 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop" ]
         %aorth.5 = local;
         %tmp.28 = self;
         %tmp.29 = getv function %tmp.28 :aurthogonal;
@@ -1763,8 +1748,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.39 = invoke %tmp.30 %tmp.31(%tmp.38);
         %tmp.40 = invoke %tmp.28 %tmp.29(%tmp.39);
         lputv %aorth.5 %tmp.40;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 314 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 315 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop" ]
         %p1a.6 = local;
         %tmp.41 = self;
         %tmp.42 = getv function %tmp.41 :vecAdd;
@@ -1776,8 +1761,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.51 = invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
         %tmp.52 = invoke %tmp.41 %tmp.42(%tmp.44, %tmp.51);
         lputv %p1a.6 %tmp.52;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 315 12 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 316 12 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop" ]
         %p2a.7 = local;
         %tmp.53 = self;
         %tmp.54 = getv function %tmp.53 :vecAdd;
@@ -1789,7 +1774,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.63 = invoke %tmp.57 %tmp.58(%tmp.60, %tmp.62);
         %tmp.64 = invoke %tmp.53 %tmp.54(%tmp.56, %tmp.63);
         lputv %p2a.7 %tmp.64;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 316 12 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 317 12 ]
         %tmp.65 = lgetv %newLines.1;
         %tmp.66 = newa 2;
         %tmp.68 = lgetv %p1a.6;
@@ -1800,40 +1785,40 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.74 = aputv %tmp.73 1 %tmp.72;
         %tmp.76 = lgetv %i.2;
         aputv %tmp.65 %tmp.76 %tmp.74;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_51_317_8_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 310 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_51_318_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 311 ]
         %tmp.77 = lgetv %i.2;
         %tmp.78 = 1;
         %tmp.79 = add %tmp.77 %tmp.78;
         lputv %i.2 %tmp.79;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_310_8_317_8_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 319 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_stop" ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_311_8_318_8_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 320 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_stop" ]
         %result.8 = local;
         %tmp.81 = lgetv %coords;
         %tmp.82 = getv function %tmp.81 :size;
         %tmp.83 = invoke %tmp.81 %tmp.82();
         %tmp.80 = newa %tmp.83;
         lputv %result.8 %tmp.80;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 320 8 ]
-        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_init:
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_end" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 321 8 ]
+        for @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_test @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_incr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_init:
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_begin" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_end" ]
         %i.9 = local;
         %tmp.84 = 0;
         lputv %i.9 %tmp.84;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_test:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_test:
         %tmp.86 = lgetv %i.9;
         %tmp.87 = lgetv %coords;
         %tmp.88 = getv function %tmp.87 :size;
         %tmp.89 = invoke %tmp.87 %tmp.88();
         %tmp.90 = lt %tmp.86 %tmp.89;
-        bf %tmp.90 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_end;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_begin:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_51_322_8_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 321 12 ]
+        bf %tmp.90 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_begin:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_51_323_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 322 12 ]
         %tmp.91 = lgetv %result.8;
         %tmp.92 = self;
         %tmp.93 = getv function %tmp.92 :intersect;
@@ -1852,25 +1837,25 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.110 = invoke %tmp.92 %tmp.93(%tmp.98, %tmp.109);
         %tmp.112 = lgetv %i.9;
         aputv %tmp.91 %tmp.112 %tmp.110;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_51_322_8_stop:
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_incr:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 320 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_51_323_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_incr:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 321 ]
         %tmp.113 = lgetv %i.9;
         %tmp.114 = 1;
         %tmp.115 = add %tmp.113 %tmp.114;
         lputv %i.9 %tmp.115;
-        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_test;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_320_8_322_8_for_end:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 323 8 ]
+        goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_test;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_321_8_323_8_for_end:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 324 8 ]
         %tmp.117 = lgetv %result.8;
         ret %tmp.117;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_308_36_324_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_309_36_325_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 327; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 328; ]
     function drawDateString(dc, x, y) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_start:
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 328 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_stop" ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 329 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_stop" ]
         %info.1 = local;
         %tmp.1 = getm $.Toybox.Time.Gregorian;
         %tmp.2 = getv function %tmp.1 :info;
@@ -1881,8 +1866,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.9 = getv %tmp.8 :FORMAT_LONG;
         %tmp.10 = invoke %tmp.1 %tmp.2(%tmp.6, %tmp.9);
         lputv %info.1 %tmp.10;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 329 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_stop" ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 330 8 ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_stop" ]
         %dateStr.2 = local;
         %tmp.11 = getm $.Toybox.Lang;
         %tmp.12 = getv function %tmp.11 :format;
@@ -1898,7 +1883,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.22 = aputv %tmp.21 1 %tmp.20;
         %tmp.23 = invoke %tmp.11 %tmp.12(%tmp.13, %tmp.22);
         lputv %dateStr.2 %tmp.23;
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 331 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 332 8 ]
         %tmp.24 = lgetv %dc;
         %tmp.25 = getv function %tmp.24 :setColor;
         %tmp.26 = getm $.Toybox.Graphics;
@@ -1906,7 +1891,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.28 = getm $.Toybox.Graphics;
         %tmp.29 = getv %tmp.28 :COLOR_BLACK;
         invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29);
-[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 332 8 ]
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 333 8 ]
         %tmp.30 = lgetv %dc;
         %tmp.31 = getv function %tmp.30 :drawText;
         %tmp.33 = lgetv %x;
@@ -1920,17 +1905,59 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_VCENTER;
         %tmp.44 = bitor %tmp.41 %tmp.43;
         invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35, %tmp.37, %tmp.39, %tmp.44);
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_327_40_333_4_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_328_40_334_4_stop:
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 339; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 340; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 343; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 344; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 347; ]
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 348; ]
     function onEnterSleep() as Void {
     }
+    //! Factory function to create buffered bitmap
+    [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 352; ]
+function bufferedBitmapFactory(options as {:width as Number, :height as Number, :palette as Array<ColorType>, :colorDepth as Number, :bitmapResource as WatchUi.BitmapResource}) as BufferedBitmapReference or BufferedBitmap {
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_358_60_366_4_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 359 8 ]
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_stmt:
+    %tmp.2 = getm $.Toybox.Graphics;
+    %tmp.4 = const :createBufferedBitmap;
+    %tmp.5 = canhazplz %tmp.2 %tmp.4;
+    bf %tmp.5 @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_false;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_true:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_48_362_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 360 12 ]
+    %tmp.6 = getm $.Toybox.System;
+    %tmp.7 = getv function %tmp.6 :println;
+    %tmp.8 = "Using createBufferedBitmap";
+    invoke %tmp.6 %tmp.7(%tmp.8);
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 361 12 ]
+    %tmp.9 = getm $.Toybox.Graphics;
+    %tmp.10 = getv function %tmp.9 :createBufferedBitmap;
+    %tmp.12 = lgetv %options;
+    %tmp.13 = invoke %tmp.9 %tmp.10(%tmp.12);
+    ret %tmp.13;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_48_362_8_stop:
+    goto @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_end;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_false:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_362_15_365_8_start:
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 363 12 ]
+    %tmp.14 = getm $.Toybox.System;
+    %tmp.15 = getv function %tmp.14 :println;
+    %tmp.16 = "Using BufferedBitmap";
+    invoke %tmp.14 %tmp.15(%tmp.16);
+[ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 364 12 ]
+    %tmp.19 = getm $.Toybox.Graphics;
+    %tmp.20 = getv function ? %tmp.19 :BufferedBitmap;
+    %tmp.22 = lgetv %options;
+    %tmp.17 = newc %tmp.20 (%tmp.22);
+    ret %tmp.17;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_362_15_365_8_stop:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_359_8_365_8_if_end:
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_358_60_366_4_stop:
+}
 }
 [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 1; ]
 <init> {
