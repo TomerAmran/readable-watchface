@@ -47,10 +47,10 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
             :width=>dc.getWidth(),
             :height=>Graphics.getFontHeight(Graphics.FONT_MEDIUM)
         });
-        minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.85), 0, 12, 4));
-        minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.85, 0, 12, 4),-3));
-        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.45, 0, 16, 7));
-        hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.45, 0, 16, 7),-3));
+        minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.67), 0, 12, 4 , 30));
+        minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.67, 0, 12, 4,30),-3));
+        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,20));
+        hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,20),-3));
 
         dateBuffer=dateBuffer.get();
     }
@@ -302,12 +302,12 @@ function onUpdate(dc) {
         return result;
     }
 
-    function generateHandCoordinatesWithoutRotation(centerPoint, angle, handLength, tailLength, headWidth, tailWidth) {
+    function generateHandCoordinatesWithoutRotation(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, stingLength) {
         // Map out the coordinates of the watch hand
         var coords = [
             [-(tailWidth / 2), tailLength], 
             [ -((headWidth) / 2), -handLength], 
-            [0, - handLength - 10], 
+            [0, - handLength - stingLength], 
             [(headWidth) / 2, -handLength], 
             [tailWidth / 2, tailLength]];
 
@@ -345,7 +345,7 @@ function onUpdate(dc) {
         System.println("after setColor");
         try{
 
-        dc.drawText(x, y, font, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(x, y, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         System.println("after drawText");
         }
         catch (exception) {

@@ -165,83 +165,87 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.108 = invoke %tmp.106 %tmp.107();
         %tmp.109 = 2;
         %tmp.110 = div %tmp.108 %tmp.109;
-        %tmp.111 = 0.85;
+        %tmp.111 = 0.67;
         %tmp.112 = mul %tmp.110 %tmp.111;
         %tmp.113 = 0;
         %tmp.114 = 12;
         %tmp.115 = 4;
-        %tmp.116 = invoke %tmp.101 %tmp.102(%tmp.104, %tmp.105, %tmp.112, %tmp.113, %tmp.114, %tmp.115);
-        invoke %tmp.99 %tmp.100(%tmp.116);
+        %tmp.116 = 30;
+        %tmp.117 = invoke %tmp.101 %tmp.102(%tmp.104, %tmp.105, %tmp.112, %tmp.113, %tmp.114, %tmp.115, %tmp.116);
+        invoke %tmp.99 %tmp.100(%tmp.117);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 51 8 ]
-        %tmp.118 = getv ? :minuteHandCoords;
-        %tmp.119 = getv function %tmp.118 :add;
-        %tmp.120 = self;
-        %tmp.121 = getv function %tmp.120 :scaleBy;
-        %tmp.122 = self;
-        %tmp.123 = getv function %tmp.122 :generateHandCoordinatesWithoutRotation;
-        %tmp.125 = getv ? :screenCenterPoint;
-        %tmp.126 = 0;
-        %tmp.127 = lgetv %dc;
-        %tmp.128 = getv function %tmp.127 :getWidth;
-        %tmp.129 = invoke %tmp.127 %tmp.128();
-        %tmp.130 = 2;
-        %tmp.131 = div %tmp.129 %tmp.130;
-        %tmp.132 = 0.85;
-        %tmp.133 = mul %tmp.131 %tmp.132;
-        %tmp.134 = 0;
-        %tmp.135 = 12;
-        %tmp.136 = 4;
-        %tmp.137 = invoke %tmp.122 %tmp.123(%tmp.125, %tmp.126, %tmp.133, %tmp.134, %tmp.135, %tmp.136);
-        %tmp.138 = -3;
-        %tmp.139 = invoke %tmp.120 %tmp.121(%tmp.137, %tmp.138);
-        invoke %tmp.118 %tmp.119(%tmp.139);
+        %tmp.119 = getv ? :minuteHandCoords;
+        %tmp.120 = getv function %tmp.119 :add;
+        %tmp.121 = self;
+        %tmp.122 = getv function %tmp.121 :scaleBy;
+        %tmp.123 = self;
+        %tmp.124 = getv function %tmp.123 :generateHandCoordinatesWithoutRotation;
+        %tmp.126 = getv ? :screenCenterPoint;
+        %tmp.127 = 0;
+        %tmp.128 = lgetv %dc;
+        %tmp.129 = getv function %tmp.128 :getWidth;
+        %tmp.130 = invoke %tmp.128 %tmp.129();
+        %tmp.131 = 2;
+        %tmp.132 = div %tmp.130 %tmp.131;
+        %tmp.133 = 0.67;
+        %tmp.134 = mul %tmp.132 %tmp.133;
+        %tmp.135 = 0;
+        %tmp.136 = 12;
+        %tmp.137 = 4;
+        %tmp.138 = 30;
+        %tmp.139 = invoke %tmp.123 %tmp.124(%tmp.126, %tmp.127, %tmp.134, %tmp.135, %tmp.136, %tmp.137, %tmp.138);
+        %tmp.140 = -3;
+        %tmp.141 = invoke %tmp.121 %tmp.122(%tmp.139, %tmp.140);
+        invoke %tmp.119 %tmp.120(%tmp.141);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 52 8 ]
-        %tmp.141 = getv ? :hourHandCoords;
-        %tmp.142 = getv function %tmp.141 :add;
-        %tmp.143 = self;
-        %tmp.144 = getv function %tmp.143 :generateHandCoordinatesWithoutRotation;
-        %tmp.146 = getv ? :screenCenterPoint;
-        %tmp.147 = 0;
-        %tmp.148 = lgetv %dc;
-        %tmp.149 = getv function %tmp.148 :getWidth;
-        %tmp.150 = invoke %tmp.148 %tmp.149();
-        %tmp.151 = 2;
-        %tmp.152 = div %tmp.150 %tmp.151;
-        %tmp.153 = 0.45;
-        %tmp.154 = mul %tmp.152 %tmp.153;
-        %tmp.155 = 0;
-        %tmp.156 = 16;
-        %tmp.157 = 7;
-        %tmp.158 = invoke %tmp.143 %tmp.144(%tmp.146, %tmp.147, %tmp.154, %tmp.155, %tmp.156, %tmp.157);
-        invoke %tmp.141 %tmp.142(%tmp.158);
+        %tmp.143 = getv ? :hourHandCoords;
+        %tmp.144 = getv function %tmp.143 :add;
+        %tmp.145 = self;
+        %tmp.146 = getv function %tmp.145 :generateHandCoordinatesWithoutRotation;
+        %tmp.148 = getv ? :screenCenterPoint;
+        %tmp.149 = 0;
+        %tmp.150 = lgetv %dc;
+        %tmp.151 = getv function %tmp.150 :getWidth;
+        %tmp.152 = invoke %tmp.150 %tmp.151();
+        %tmp.153 = 2;
+        %tmp.154 = div %tmp.152 %tmp.153;
+        %tmp.155 = 0.37;
+        %tmp.156 = mul %tmp.154 %tmp.155;
+        %tmp.157 = 0;
+        %tmp.158 = 16;
+        %tmp.159 = 7;
+        %tmp.160 = 20;
+        %tmp.161 = invoke %tmp.145 %tmp.146(%tmp.148, %tmp.149, %tmp.156, %tmp.157, %tmp.158, %tmp.159, %tmp.160);
+        invoke %tmp.143 %tmp.144(%tmp.161);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 53 8 ]
-        %tmp.160 = getv ? :hourHandCoords;
-        %tmp.161 = getv function %tmp.160 :add;
-        %tmp.162 = self;
-        %tmp.163 = getv function %tmp.162 :scaleBy;
-        %tmp.164 = self;
-        %tmp.165 = getv function %tmp.164 :generateHandCoordinatesWithoutRotation;
-        %tmp.167 = getv ? :screenCenterPoint;
-        %tmp.168 = 0;
-        %tmp.169 = lgetv %dc;
-        %tmp.170 = getv function %tmp.169 :getWidth;
-        %tmp.171 = invoke %tmp.169 %tmp.170();
-        %tmp.172 = 2;
-        %tmp.173 = div %tmp.171 %tmp.172;
-        %tmp.174 = 0.45;
-        %tmp.175 = mul %tmp.173 %tmp.174;
-        %tmp.176 = 0;
-        %tmp.177 = 16;
-        %tmp.178 = 7;
-        %tmp.179 = invoke %tmp.164 %tmp.165(%tmp.167, %tmp.168, %tmp.175, %tmp.176, %tmp.177, %tmp.178);
-        %tmp.180 = -3;
-        %tmp.181 = invoke %tmp.162 %tmp.163(%tmp.179, %tmp.180);
-        invoke %tmp.160 %tmp.161(%tmp.181);
+        %tmp.163 = getv ? :hourHandCoords;
+        %tmp.164 = getv function %tmp.163 :add;
+        %tmp.165 = self;
+        %tmp.166 = getv function %tmp.165 :scaleBy;
+        %tmp.167 = self;
+        %tmp.168 = getv function %tmp.167 :generateHandCoordinatesWithoutRotation;
+        %tmp.170 = getv ? :screenCenterPoint;
+        %tmp.171 = 0;
+        %tmp.172 = lgetv %dc;
+        %tmp.173 = getv function %tmp.172 :getWidth;
+        %tmp.174 = invoke %tmp.172 %tmp.173();
+        %tmp.175 = 2;
+        %tmp.176 = div %tmp.174 %tmp.175;
+        %tmp.177 = 0.37;
+        %tmp.178 = mul %tmp.176 %tmp.177;
+        %tmp.179 = 0;
+        %tmp.180 = 16;
+        %tmp.181 = 7;
+        %tmp.182 = 20;
+        %tmp.183 = invoke %tmp.167 %tmp.168(%tmp.170, %tmp.171, %tmp.178, %tmp.179, %tmp.180, %tmp.181, %tmp.182);
+        %tmp.184 = -3;
+        %tmp.185 = invoke %tmp.165 %tmp.166(%tmp.183, %tmp.184);
+        invoke %tmp.163 %tmp.164(%tmp.185);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 55 8 ]
-        %tmp.183 = getv ? :dateBuffer;
-        %tmp.184 = getv function %tmp.183 :get;
-        %tmp.185 = invoke %tmp.183 %tmp.184();
-        putv self :dateBuffer %tmp.185;
+        %tmp.187 = getv ? :dateBuffer;
+        %tmp.188 = getv function %tmp.187 :get;
+        %tmp.189 = invoke %tmp.187 %tmp.188();
+        putv self :dateBuffer %tmp.189;
 _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_22_40_56_4_stop:
     }
     [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 61; ]
@@ -1646,10 +1650,10 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
 _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_289_47_303_4_stop:
     }
     [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 305; ]
-    function generateHandCoordinatesWithoutRotation(centerPoint, angle, handLength, tailLength, headWidth, tailWidth) {
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_118_315_8_start:
+    function generateHandCoordinatesWithoutRotation(centerPoint, angle, handLength, tailLength, headWidth, tailWidth, stingLength) {
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_131_315_8_start:
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 307 8 ]
-        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_118_315_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_118_315_8_stop" ]
+        [ "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_131_315_8_start" "_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_131_315_8_stop" ]
         %coords.1 = local;
         %tmp.1 = newa 5;
         %tmp.2 = newa 2;
@@ -1683,40 +1687,40 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.34 = aputv %tmp.33 0 %tmp.32;
         %tmp.36 = lgetv %handLength;
         %tmp.37 = sub 0 %tmp.36;
-        %tmp.38 = 10;
-        %tmp.39 = sub %tmp.37 %tmp.38;
-        %tmp.40 = dup %tmp.34;
-        %tmp.41 = aputv %tmp.40 1 %tmp.39;
-        %tmp.42 = dup %tmp.30;
-        %tmp.43 = aputv %tmp.42 2 %tmp.41;
-        %tmp.44 = newa 2;
-        %tmp.46 = lgetv %headWidth;
-        %tmp.47 = 2;
-        %tmp.48 = div %tmp.46 %tmp.47;
-        %tmp.49 = dup %tmp.44;
-        %tmp.50 = aputv %tmp.49 0 %tmp.48;
-        %tmp.52 = lgetv %handLength;
-        %tmp.53 = sub 0 %tmp.52;
-        %tmp.54 = dup %tmp.50;
-        %tmp.55 = aputv %tmp.54 1 %tmp.53;
-        %tmp.56 = dup %tmp.43;
-        %tmp.57 = aputv %tmp.56 3 %tmp.55;
-        %tmp.58 = newa 2;
-        %tmp.60 = lgetv %tailWidth;
-        %tmp.61 = 2;
-        %tmp.62 = div %tmp.60 %tmp.61;
-        %tmp.63 = dup %tmp.58;
-        %tmp.64 = aputv %tmp.63 0 %tmp.62;
-        %tmp.66 = lgetv %tailLength;
-        %tmp.67 = dup %tmp.64;
-        %tmp.68 = aputv %tmp.67 1 %tmp.66;
-        %tmp.69 = dup %tmp.57;
-        %tmp.70 = aputv %tmp.69 4 %tmp.68;
-        lputv %coords.1 %tmp.70;
+        %tmp.39 = lgetv %stingLength;
+        %tmp.40 = sub %tmp.37 %tmp.39;
+        %tmp.41 = dup %tmp.34;
+        %tmp.42 = aputv %tmp.41 1 %tmp.40;
+        %tmp.43 = dup %tmp.30;
+        %tmp.44 = aputv %tmp.43 2 %tmp.42;
+        %tmp.45 = newa 2;
+        %tmp.47 = lgetv %headWidth;
+        %tmp.48 = 2;
+        %tmp.49 = div %tmp.47 %tmp.48;
+        %tmp.50 = dup %tmp.45;
+        %tmp.51 = aputv %tmp.50 0 %tmp.49;
+        %tmp.53 = lgetv %handLength;
+        %tmp.54 = sub 0 %tmp.53;
+        %tmp.55 = dup %tmp.51;
+        %tmp.56 = aputv %tmp.55 1 %tmp.54;
+        %tmp.57 = dup %tmp.44;
+        %tmp.58 = aputv %tmp.57 3 %tmp.56;
+        %tmp.59 = newa 2;
+        %tmp.61 = lgetv %tailWidth;
+        %tmp.62 = 2;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        %tmp.64 = dup %tmp.59;
+        %tmp.65 = aputv %tmp.64 0 %tmp.63;
+        %tmp.67 = lgetv %tailLength;
+        %tmp.68 = dup %tmp.65;
+        %tmp.69 = aputv %tmp.68 1 %tmp.67;
+        %tmp.70 = dup %tmp.58;
+        %tmp.71 = aputv %tmp.70 4 %tmp.69;
+        lputv %coords.1 %tmp.71;
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 314 8 ]
-        %tmp.72 = lgetv %coords.1;
-        ret %tmp.72;
-_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_118_315_8_stop:
+        %tmp.73 = lgetv %coords.1;
+        ret %tmp.73;
+_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_305_131_315_8_stop:
     }
     [ @file = "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc"; @line = 317; ]
     function scaleBy(coords, scale) {
@@ -1962,7 +1966,8 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.51 = getv function %tmp.50 :drawText;
         %tmp.53 = lgetv %x;
         %tmp.55 = lgetv %y;
-        %tmp.57 = getv ? :font;
+        %tmp.56 = getm $.Toybox.Graphics;
+        %tmp.57 = getv %tmp.56 :FONT_TINY;
         %tmp.59 = lgetv %dateStr.2;
         %tmp.60 = getm $.Toybox.Graphics;
         %tmp.61 = getv %tmp.60 :TEXT_JUSTIFY_CENTER;
