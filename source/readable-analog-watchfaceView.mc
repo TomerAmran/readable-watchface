@@ -47,10 +47,10 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
             :width=>dc.getWidth(),
             :height=>Graphics.getFontHeight(Graphics.FONT_MEDIUM)
         });
-        minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.67), 0, 12, 4 , 30));
-        minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.67, 0, 12, 4,30),-3));
-        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,20));
-        hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,20),-3));
+        minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.85), 0, 12, 4 , 10));
+        minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.85, 0, 12, 4,10),-3));
+        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,18));
+        hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,15),-3));
 
         dateBuffer=dateBuffer.get();
     }
@@ -217,7 +217,7 @@ function onUpdate(dc) {
 
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(bigCoords);
-        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        targetDc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(coords);
     }
 

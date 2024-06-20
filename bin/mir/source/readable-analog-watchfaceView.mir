@@ -165,12 +165,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.108 = invoke %tmp.106 %tmp.107();
         %tmp.109 = 2;
         %tmp.110 = div %tmp.108 %tmp.109;
-        %tmp.111 = 0.67;
+        %tmp.111 = 0.85;
         %tmp.112 = mul %tmp.110 %tmp.111;
         %tmp.113 = 0;
         %tmp.114 = 12;
         %tmp.115 = 4;
-        %tmp.116 = 30;
+        %tmp.116 = 10;
         %tmp.117 = invoke %tmp.101 %tmp.102(%tmp.104, %tmp.105, %tmp.112, %tmp.113, %tmp.114, %tmp.115, %tmp.116);
         invoke %tmp.99 %tmp.100(%tmp.117);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 51 8 ]
@@ -187,12 +187,12 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.130 = invoke %tmp.128 %tmp.129();
         %tmp.131 = 2;
         %tmp.132 = div %tmp.130 %tmp.131;
-        %tmp.133 = 0.67;
+        %tmp.133 = 0.85;
         %tmp.134 = mul %tmp.132 %tmp.133;
         %tmp.135 = 0;
         %tmp.136 = 12;
         %tmp.137 = 4;
-        %tmp.138 = 30;
+        %tmp.138 = 10;
         %tmp.139 = invoke %tmp.123 %tmp.124(%tmp.126, %tmp.127, %tmp.134, %tmp.135, %tmp.136, %tmp.137, %tmp.138);
         %tmp.140 = -3;
         %tmp.141 = invoke %tmp.121 %tmp.122(%tmp.139, %tmp.140);
@@ -214,7 +214,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.157 = 0;
         %tmp.158 = 16;
         %tmp.159 = 7;
-        %tmp.160 = 20;
+        %tmp.160 = 18;
         %tmp.161 = invoke %tmp.145 %tmp.146(%tmp.148, %tmp.149, %tmp.156, %tmp.157, %tmp.158, %tmp.159, %tmp.160);
         invoke %tmp.143 %tmp.144(%tmp.161);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 53 8 ]
@@ -236,7 +236,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.179 = 0;
         %tmp.180 = 16;
         %tmp.181 = 7;
-        %tmp.182 = 20;
+        %tmp.182 = 15;
         %tmp.183 = invoke %tmp.167 %tmp.168(%tmp.170, %tmp.171, %tmp.178, %tmp.179, %tmp.180, %tmp.181, %tmp.182);
         %tmp.184 = -3;
         %tmp.185 = invoke %tmp.165 %tmp.166(%tmp.183, %tmp.184);
@@ -1043,7 +1043,7 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.29 = lgetv %targetDc;
         %tmp.30 = getv function %tmp.29 :setColor;
         %tmp.31 = getm $.Toybox.Graphics;
-        %tmp.32 = getv %tmp.31 :COLOR_BLACK;
+        %tmp.32 = getv %tmp.31 :COLOR_DK_GREEN;
         %tmp.33 = getm $.Toybox.Graphics;
         %tmp.34 = getv %tmp.33 :COLOR_BLACK;
         invoke %tmp.29 %tmp.30(%tmp.32, %tmp.34);
