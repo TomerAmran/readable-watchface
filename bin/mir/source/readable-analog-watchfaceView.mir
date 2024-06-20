@@ -1994,10 +1994,9 @@ _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_
         %tmp.72 = "exception";
         invoke %tmp.70 %tmp.71(%tmp.72);
 [ "/Users/tomera/readable-analog-watchface/source/readable-analog-watchfaceView.mc" 353 12 ]
-        %tmp.73 = getm $.Toybox.System;
-        %tmp.74 = getv function %tmp.73 :println;
-        %tmp.76 = lgetv %exception.3;
-        invoke %tmp.73 %tmp.74(%tmp.76);
+        %tmp.73 = lgetv %exception.3;
+        %tmp.74 = getv function %tmp.73 :printStackTrace;
+        invoke %tmp.73 %tmp.74();
 _Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_351_26_354_0_stop:
         jsr @_Users_tomera_readable_analog_watchface_source_readable_analog_watchfaceView_mc_346_8_354_0_finally;
         pop;

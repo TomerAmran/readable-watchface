@@ -350,7 +350,7 @@ function onUpdate(dc) {
         }
         catch (exception) {
             System.println("exception");
-            System.println(exception.mMessage);
+            exception.printStackTrace();
 }
     }
 
