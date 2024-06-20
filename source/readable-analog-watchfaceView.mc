@@ -79,6 +79,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
 
 function drawBackGround(targetDc, radius, width, height){
     System.println("drawBackGround");
+    System.println(targetDc);
     // Fill the entire background with Black.
     // log after each line to see if it is working
     targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
@@ -143,13 +144,12 @@ function drawWatchface(dc){
         var secondHand;
         var targetDc = dc;
 
-        width = targetDc.getWidth();g
+        width = targetDc.getWidth();
         height = targetDc.getHeight();
         radius = width / 2;
 
         if (!backgroundLoaded) {
-
-                drawBackGround(backgroundBuffer.getDc/(), radius, width, height);
+                drawBackGround(backgroundBuffer.getDc(), radius, width, height);
                 backgroundLoaded = true;
         }
 
@@ -351,12 +351,12 @@ function onUpdate(dc) {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void {
-        System.println("onExitSleep");
+        // System.println("onExitSleep");
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
-        System.println("onEnterSleep");
+        // System.println("onEnterSleep");
     }
 
     //! Factory function to create buffered bitmap
