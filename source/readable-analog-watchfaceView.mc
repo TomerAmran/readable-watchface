@@ -20,6 +20,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
+        System.println("onLayout");
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
@@ -79,13 +80,16 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
 function drawBackGround(targetDc, radius, width, height){
     System.println("drawBackGround");
     // Fill the entire background with Black.
-    // log after 
+    // log after each line to see if it is working
     targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+    System.println("fillRectangle");
     targetDc.fillRectangle(0, 0, width, height);
 
+    System.println("drawDateString before calling");
     drawDateString(targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
 
     // Draw the numbers.
+    System.println("drawNumbers");
     var distance = radius * 0.78;
     for (var i = 1 ; i<=12 ; i++){
         var angel = (Math.PI * 2 /12 * i) - (Math.PI/2);
@@ -97,6 +101,7 @@ function drawBackGround(targetDc, radius, width, height){
     }
 
     //draw the minutes indicators
+    System.println("drawMinutes");
     var tickAngle =  Math.PI * 2 / 60;
     for (var i = 1 ; i<= 60; i++){
         var x = (radius - 5);
@@ -138,13 +143,14 @@ function drawWatchface(dc){
         var secondHand;
         var targetDc = dc;
 
-        width = targetDc.getWidth();
+        width = targetDc.getWidth();g
         height = targetDc.getHeight();
         radius = width / 2;
 
         if (!backgroundLoaded) {
+
+                drawBackGround(backgroundBuffer.getDc/(), radius, width, height);
                 backgroundLoaded = true;
-                drawBackGround(backgroundBuffer.getDc(), radius, width, height);
         }
 
         dc.drawBitmap(0,0, backgroundBuffer);
@@ -328,6 +334,7 @@ function onUpdate(dc) {
 
     // Draw the date string into the provided buffer at the specified location
     function drawDateString( dc, x, y ) {
+        System.println("drawDateString");
         var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
         var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
 
