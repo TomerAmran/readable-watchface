@@ -335,11 +335,23 @@ function onUpdate(dc) {
     // Draw the date string into the provided buffer at the specified location
     function drawDateString( dc, x, y ) {
         System.println("drawDateString");
+        System.println(x);
+        System.println(y);
         var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        System.println("after info");
         var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
-
+        System.println("after format");
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(x, y, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        System.println("after setColor");
+        try{
+
+        dc.drawText(x, y, font, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        System.println("after drawText");
+        }
+        catch (exception) {
+            System.println("exception");
+            System.println(exception.mMessage);
+}
     }
 
 
