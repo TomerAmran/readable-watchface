@@ -8,11 +8,15 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var screenCenterPoint;
     var font;
     var backgroundBuffer;
-    var dateBuffer;
     var backgroundLoaded = false;
+    var dateBuffer;
     var minuteHandCoords = [];
     var hourHandCoords = [];
-    var date;
+    var dateDay;
+    var height;
+    var width;
+    var tinyFontHeight;
+    var dateBufferYaxis;
 
     function initialize() {
         WatchFace.initialize();
@@ -24,10 +28,12 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
+        width=dc.getWidth();
+        height=dc.getHeight();
 
         backgroundBuffer = bufferedBitmapFactory({
-                :width=>dc.getWidth(),
-                :height=>dc.getHeight(),
+                :width=>width,
+                :height=>height,
                 :palette=> [
                     Graphics.COLOR_DK_GRAY,
                     Graphics.COLOR_LT_GRAY,
@@ -36,23 +42,24 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
                 ],
 
             });
+            
+        tinyFontHeight = Graphics.getFontHeight(Graphics.FONT_TINY);
+        dateBufferYaxis = height/2 - tinyFontHeight/2;
+
+         dateBuffer = bufferedBitmapFactory({
+                :width=>width,
+                :height=>tinyFontHeight
+            });
+
+        dateBuffer=dateBuffer.get();
 
         backgroundBuffer = backgroundBuffer.get();
         
-        // Allocate a buffer tall enough to draw the date into the full width of the
-        // screen. This buffer is also used for blanking the second hand. This full
-        // color buffer is needed because anti-aliased fonts cannot be drawn into
-        // a buffer with a reduced color palette
-        dateBuffer = Graphics.createBufferedBitmap({
-            :width=>dc.getWidth(),
-            :height=>Graphics.getFontHeight(Graphics.FONT_MEDIUM)
-        });
         minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.85), 0, 12, 4 , 10));
         minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.85, 0, 12, 4,10),-3));
         hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,18));
         hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,15),-3));
 
-        dateBuffer=dateBuffer.get();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -61,33 +68,24 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     function onShow() as Void {
     }
 
-    // // Update the view
-    // function onUpdate(dc as Dc) as Void {
-    //     // Get and show the current time
-    //     var clockTime = System.getClockTime();
-    //     var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-    //     var view = View.findDrawableById("TimeLabel") as Text;
-    //     view.setText(timeString);
-
-    //     // Call the parent onUpdate function to redraw the layout
-    //     View.onUpdate(dc);
-    // }
-// function onPartialUpdate(dc) {
-//     System.println("onPartialUpdate");
-//     drawWatchface(dc);
-// }
+function drawDate() {
+    System.println("drawDate");
+    var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
+    if (dateDay != info.day) {
+        System.println("drawDateReal");
+        dateDay = info.day;
+        var dateDc = dateBuffer.getDc();
+        var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
+        dateDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dateDc.drawText(70, tinyFontHeight/2, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+}
 
 function drawBackGround(targetDc, radius, width, height){
     System.println("drawBackGround");
     System.println(targetDc);
-    // Fill the entire background with Black.
-    // log after each line to see if it is working
     targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
-    System.println("fillRectangle");
     targetDc.fillRectangle(0, 0, width, height);
-
-    System.println("drawDateString before calling");
-    drawDateString(targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
 
     // Draw the numbers.
     System.println("drawNumbers");
@@ -153,7 +151,10 @@ function drawWatchface(dc){
                 backgroundLoaded = true;
         }
 
+
+
         dc.drawBitmap(0,0, backgroundBuffer);
+        dc.drawBitmap(0,dateBufferYaxis, dateBuffer);
 
         // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         // dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T+N", Graphics.TEXT_JUSTIFY_CENTER);
@@ -193,12 +194,14 @@ function drawCircleAtTheMiddle(targetDc){
     targetDc.fillCircle(screenCenterPoint[0], screenCenterPoint[1], 2);
     
 }
+
 function onUpdate(dc) {
     System.println("onUpdate");
     // if (prevMinute != System.getClockTime().min) {
     //     prevMinute = System.getClockTime().min;
     //     drawWatchface(dc);
     // }
+    drawDate();
     drawWatchface(dc);
 }
 
@@ -217,7 +220,7 @@ function onUpdate(dc) {
 
         targetDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(bigCoords);
-        targetDc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_BLACK);
+        targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         targetDc.fillPolygon(coords);
     }
 
@@ -330,28 +333,6 @@ function onUpdate(dc) {
             result[i] = intersect(newLines[i], newLines[(i + 1) % coords.size()]);
         }
         return result;
-    }
-
-    // Draw the date string into the provided buffer at the specified location
-    function drawDateString( dc, x, y ) {
-        System.println("drawDateString");
-        System.println(x);
-        System.println(y);
-        var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
-        System.println("after info");
-        var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
-        System.println("after format");
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        System.println("after setColor");
-        try{
-
-        dc.drawText(x, y, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        System.println("after drawText");
-        }
-        catch (exception) {
-            System.println("exception");
-            exception.printStackTrace();
-}
     }
 
 
