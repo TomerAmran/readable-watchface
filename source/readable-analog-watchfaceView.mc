@@ -17,6 +17,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     var width;
     var tinyFontHeight;
     var dateBufferYaxis;
+    var radius;
 
     function initialize() {
         WatchFace.initialize();
@@ -24,12 +25,13 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        System.println("onLayout");
+      //  System.println("onLayout");
         setLayout(Rez.Layouts.WatchFace(dc));
         screenCenterPoint = [dc.getWidth()/2, dc.getHeight()/2];
         font = WatchUi.loadResource(Rez.Fonts.id_font_black_diamond);
         width=dc.getWidth();
         height=dc.getHeight();
+        radius = width / 2;
 
         backgroundBuffer = bufferedBitmapFactory({
                 :width=>width,
@@ -69,10 +71,10 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
     }
 
 function drawDate() {
-    System.println("drawDate");
+    // System.println("drawDate");
     var info = Gregorian.info(Time.now(), Time.FORMAT_LONG);
     if (dateDay != info.day) {
-        System.println("drawDateReal");
+        // System.println("drawDateReal");
         dateDay = info.day;
         var dateDc = dateBuffer.getDc();
         var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
@@ -81,14 +83,13 @@ function drawDate() {
     }
 }
 
-function drawBackGround(targetDc, radius, width, height){
-    System.println("drawBackGround");
-    System.println(targetDc);
+function drawBackGround(){
+    // System.println("drawBackGround");
+    var targetDc = backgroundBuffer.getDc();
     targetDc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
     targetDc.fillRectangle(0, 0, width, height);
 
-    // Draw the numbers.
-    System.println("drawNumbers");
+    // System.println("drawNumbers");
     var distance = radius * 0.78;
     for (var i = 1 ; i<=12 ; i++){
         var angel = (Math.PI * 2 /12 * i) - (Math.PI/2);
@@ -100,7 +101,7 @@ function drawBackGround(targetDc, radius, width, height){
     }
 
     //draw the minutes indicators
-    System.println("drawMinutes");
+    // System.println("drawMinutes");
     var tickAngle =  Math.PI * 2 / 60;
     for (var i = 1 ; i<= 60; i++){
         var x = (radius - 5);
@@ -131,9 +132,6 @@ function drawBackGround(targetDc, radius, width, height){
 }
 
 function drawWatchface(dc){
-        System.println("drawWatchface");
-        var width;
-        var height;
         var radius;
         var screenWidth = dc.getWidth();
         var clockTime = System.getClockTime();
@@ -141,36 +139,24 @@ function drawWatchface(dc){
         var hourHandAngle;
         var secondHand;
         var targetDc = dc;
-
-        width = targetDc.getWidth();
-        height = targetDc.getHeight();
         radius = width / 2;
 
         if (!backgroundLoaded) {
-                drawBackGround(backgroundBuffer.getDc(), radius, width, height);
+                drawBackGround();
                 backgroundLoaded = true;
         }
 
-
-
         dc.drawBitmap(0,0, backgroundBuffer);
-        dc.drawBitmap(0,dateBufferYaxis, dateBuffer);
+        dc.drawBitmap(0, dateBufferYaxis, dateBuffer);
 
-        // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        // dc.drawText(screenCenterPoint[0], screenCenterPoint[1] - radius* 0.5, Graphics.FONT_TINY, "T+N", Graphics.TEXT_JUSTIFY_CENTER);
-
-
-        // drawDateString( targetDc, screenCenterPoint[0] - radius* 0.45, screenCenterPoint[1]);
         // Draw the battery percentage directly to the main screen.
         var dataString = (System.getSystemStats().battery + 0.5).toNumber().toString() + "%";
-        dc.setColor(Graphics.
-        
-        COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(screenCenterPoint[0], screenCenterPoint[1] + radius* 0.4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(screenCenterPoint[0] + 3, screenCenterPoint[1] + radius* 0.4, Graphics.FONT_TINY, dataString, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Draw the hour hand. Convert it to minutes and compute the angle.
         hourHandAngle = (((clockTime.hour % 12) * 60) + clockTime.min);
-        hourHandAngle = hourHandAngle / (12 * 60.0);
+        hourHandAngle = hourHandAngle / 720.0;
         hourHandAngle = hourHandAngle * Math.PI * 2;
         drawHand2(screenCenterPoint, hourHandAngle, hourHandCoords[0], hourHandCoords[1], targetDc);
 
@@ -196,11 +182,6 @@ function drawCircleAtTheMiddle(targetDc){
 }
 
 function onUpdate(dc) {
-    System.println("onUpdate");
-    // if (prevMinute != System.getClockTime().min) {
-    //     prevMinute = System.getClockTime().min;
-    //     drawWatchface(dc);
-    // }
     drawDate();
     drawWatchface(dc);
 }
@@ -361,10 +342,10 @@ function onUpdate(dc) {
                 :bitmapResource as WatchUi.BitmapResource
             }) as BufferedBitmapReference or BufferedBitmap {
         if (Graphics has :createBufferedBitmap) {
-            System.println("Using createBufferedBitmap");
+            // System.println("Using createBufferedBitmap");
             return Graphics.createBufferedBitmap(options);
         } else {
-            System.println("Using BufferedBitmap");
+            // System.println("Using BufferedBitmap");
             return new Graphics.BufferedBitmap(options);
         }
     }
