@@ -58,9 +58,9 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         backgroundBuffer = backgroundBuffer.get();
         
         minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.85), 0, 12, 4 , 10));
-        minuteHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.85, 0, 12, 4,10),-3));
-        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,18));
-        hourHandCoords.add(scaleBy(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7,15),-3));
+        minuteHandCoords.add(scaleBy(minuteHandCoords[0],-3));
+        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7, 10));
+        hourHandCoords.add(scaleBy(hourHandCoords[0],-3));
 
     }
 
