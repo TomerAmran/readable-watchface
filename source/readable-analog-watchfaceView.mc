@@ -59,7 +59,7 @@ class readable_analog_watchfaceView extends WatchUi.WatchFace {
         
         minuteHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, (dc.getWidth()/2 * 0.85), 0, 12, 4 , 10));
         minuteHandCoords.add(scaleBy(minuteHandCoords[0],-3));
-        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.37, 0, 16, 7, 10));
+        hourHandCoords.add(generateHandCoordinatesWithoutRotation(screenCenterPoint, 0, dc.getWidth()/2 * 0.38, 0, 16, 7, 10));
         hourHandCoords.add(scaleBy(hourHandCoords[0],-3));
 
     }
@@ -77,8 +77,10 @@ function drawDate() {
         // System.println("drawDateReal");
         dateDay = info.day;
         var dateDc = dateBuffer.getDc();
+        dateDc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dateDc.clear();
         var dateStr = Lang.format("$1$$2$", [info.month, info.day]);
-        dateDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dateDc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dateDc.drawText(70, tinyFontHeight/2, Graphics.FONT_TINY, dateStr, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 }
@@ -141,10 +143,10 @@ function drawWatchface(dc){
         var targetDc = dc;
         radius = width / 2;
 
-        if (!backgroundLoaded) {
+        // if (!backgroundLoaded) {
                 drawBackGround();
-                backgroundLoaded = true;
-        }
+                // backgroundLoaded = true;
+        // }
 
         dc.drawBitmap(0,0, backgroundBuffer);
         dc.drawBitmap(0, dateBufferYaxis, dateBuffer);
